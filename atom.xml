@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>夜骑博客</title>
+  <title>夜七. BLOG</title>
   
   
   <link href="https://yeqi.net/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>https://yeqi.net/</id>
   
   <author>
-    <name>夜骑</name>
+    <name>夜七</name>
     
   </author>
   
