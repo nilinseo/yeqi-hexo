@@ -6,7 +6,7 @@
   <link href="https://yeqi.net/atom.xml" rel="self"/>
   
   <link href="https://yeqi.net/"/>
-  <updated>2024-07-14T15:03:39.131Z</updated>
+  <updated>2024-07-15T13:35:52.647Z</updated>
   <id>https://yeqi.net/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ceshi</title>
+    <link href="https://yeqi.net/essay/ceshi/"/>
+    <id>https://yeqi.net/essay/ceshi/</id>
+    <published>2024-07-15T13:34:16.000Z</published>
+    <updated>2024-07-15T13:35:52.647Z</updated>
+    
+    <content type="html"><![CDATA[<p>这个是一个测试文件，一会就会删除它</p><p><img src="https://img.yeqi.net/3ea8889391ae358a58b5f29c1ff4a2d3.jpg" alt="测试"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;这个是一个测试文件，一会就会删除它&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://img.yeqi.net/3ea8889391ae358a58b5f29c1ff4a2d3.jpg&quot; alt=&quot;测试&quot;&gt;&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>hello</title>
