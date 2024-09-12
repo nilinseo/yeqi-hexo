@@ -6,7 +6,7 @@
   <link href="https://yeqi.net/atom.xml" rel="self"/>
   
   <link href="https://yeqi.net/"/>
-  <updated>2024-07-15T13:35:52.647Z</updated>
+  <updated>2024-09-12T16:13:43.358Z</updated>
   <id>https://yeqi.net/</id>
   
   <author>
@@ -17,24 +17,26 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>ceshi</title>
-    <link href="https://yeqi.net/essay/ceshi/"/>
-    <id>https://yeqi.net/essay/ceshi/</id>
-    <published>2024-07-15T13:34:16.000Z</published>
-    <updated>2024-07-15T13:35:52.647Z</updated>
+    <title>这个站点的说明</title>
+    <link href="https://yeqi.net/essay/1/"/>
+    <id>https://yeqi.net/essay/1/</id>
+    <published>2024-09-12T16:06:43.000Z</published>
+    <updated>2024-09-12T16:13:43.358Z</updated>
     
-    <content type="html"><![CDATA[<p>这个是一个测试文件，一会就会删除它</p><p><img src="https://img.yeqi.net/3ea8889391ae358a58b5f29c1ff4a2d3.jpg" alt="测试"></p>]]></content>
+    <content type="html"><![CDATA[<p>本来打算这个站点做一个夜骑相关的站点的，但是奈何自己实在是没有这方面的资源以及经历，还是做成一个个人的博客吧，只是可惜了这个域名了，当然只是可惜，嘿嘿，谁让我注册了这个域名呢！</p><p>当然还是觉得这个域名比较好记，并且也简短。</p><p>嗯，就当一个个人博客吧，记录一下我想记录的一些······</p><p>当一个小博客挺好。</p><p><img src="https://img.yeqi.net/blog.jpg"></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;这个是一个测试文件，一会就会删除它&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://img.yeqi.net/3ea8889391ae358a58b5f29c1ff4a2d3.jpg&quot; alt=&quot;测试&quot;&gt;&lt;/p&gt;
-</summary>
+    <summary type="html">&lt;p&gt;本来打算这个站点做一个夜骑相关的站点的，但是奈何自己实在是没有这方面的资源以及经历，还是做成一个个人的博客吧，只是可惜了这个域名了，当然只是可惜，嘿嘿，谁让我注册了这个域名呢！&lt;/p&gt;
+&lt;p&gt;当然还是觉得这个域名比较好记，并且也简短。&lt;/p&gt;
+&lt;p&gt;嗯，就当一个个人博客吧，</summary>
       
     
     
     
+    
+    <category term="博客" scheme="https://yeqi.net/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
