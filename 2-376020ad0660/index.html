@@ -13,7 +13,7 @@
 
 
 
-<title>如何申请成为免费的虚拟主机经销商 | 夜七. BLOG</title>
+<title>老街道的随手一拍的照片与无损压缩照片 | 夜七. BLOG</title>
 
 
 
@@ -128,11 +128,76 @@
                 <div class="container">
     
     
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
 
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">如何申请成为免费的虚拟主机经销商</h1>
+            <h1 class="post-title">老街道的随手一拍的照片与无损压缩照片</h1>
             
                 <div class="post-meta">
                     
@@ -141,14 +206,14 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">九月 21, 2024&nbsp;&nbsp;22:26:11</a>
+                        Date: <a href="#">九月 23, 2024&nbsp;&nbsp;22:15:03</a>
                         </span>
                     
                     
                         <span class="post-category">
                     Category:
                             
-                                <a href="/categories/%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90/">免费资源</a>
+                                <a href="/categories/%E9%9A%8F%E6%89%8B%E4%B8%80%E6%8B%8D/">随手一拍</a>
                             
                         </span>
                     
@@ -157,35 +222,22 @@
         </header>
 
         <div class="post-content">
-            <p>分享一下我观察了好几年的免费虚拟主机哈。也不算是观察哈，只是有时候会需要简单的用一下这个免费的虚拟主机。所以感觉还不错，正好也写一篇文章记录一下这个主机，不为别的，只是为了以后自己使用的时候方便。</p>
-<p>也顺便记录一下自己申请成为这个免费的主机经销商。当然这个是全部免费的。</p>
-<p>要求：</p>
-<ul>
-<li>域名 《一定是要顶级域名，不可以使用垃圾域名。》</li>
-<li>邮箱 《就是你自己的邮箱。》</li>
-</ul>
-<p>第一步：</p>
-<p>先给自己的域名添加4个NS记录，我用的是我顶级域名的二级域名申请的哈。《free.yeqi.net》</p>
-<p>附图：</p>
-<p><img src="https://img.yeqi.net/free-host1.jpeg" alt="域名ns记录"></p>
-<ul>
-<li>ns1.byet.org</li>
-<li>ns2.byet.org</li>
-<li>ns3.byet.org</li>
-<li>ns4.byet.org</li>
-</ul>
-<p>第二步：</p>
-<p>打开免费主机经销商申请地址：<a target="_blank" rel="noopener" href="https://www.myownfreehost.net/createreseller.php">https://www.myownfreehost.net/createreseller.php</a></p>
-<p>填写你要使用的域名以及邮箱，因为第一步已经填写了4个ns记录值，</p>
-<p>附图：</p>
-<p><img src="https://img.yeqi.net/free-host2.jpeg" alt="注册免费虚拟主机经销商"></p>
-<p>在 <strong>Domain name</strong> 处填写你的域名，因为我是使用的二级域名，比如：free.yeqi.net</p>
-<p>在 <strong>Email</strong> 填写你的邮箱。</p>
-<p>之后点击下面的《<strong>CLICK TO SIGN UP</strong>》按钮，</p>
-<p>等待网页变成有英文字段的时候，就可以了，剩下的就是等待他们的配置了。一般是24小时以内就给配置好了。当他们配置好之后，你的邮箱就可以收到管理后台的邮件了。</p>
-<p>附图：</p>
-<p><img src="https://img.yeqi.net/free-host3.jpeg"></p>
-<p>等我这边申请成功后，我在写一篇，如何使用这个免费的虚拟主机哈。</p>
+            <p>今天尝试用手机拍了一张古老建筑的照片，准备放在这篇博文里，但是发现体积太大了，竟然有2.38MB!</p>
+<p><img src="https://img.yeqi.net/2024-09-23.png"></p>
+<p>如果直接放到博文里，那样实在是太大了，并且如果有人打开这个博文的话，就单单一个图片加载时长就让人无法忍受！</p>
+<p>再有一个，本身咱们的这个博客是存放在GitHub的仓库里，也会有滥用的风险，所以一定要想办法给图片压缩一下。</p>
+<p>所以我在网上找到了一种办法，当然本着能不花钱解决问题的心态，就一定不花钱。嘿嘿</p>
+<h2 id="TinyPNG图片智能压缩"><a href="#TinyPNG图片智能压缩" class="headerlink" title="TinyPNG图片智能压缩"></a>TinyPNG图片智能压缩</h2><p>TinyPNG 在不牺牲质量的情况下将文件大小减少多达 80%，从而加快页面加载速度。这种优化对于保持用户注意力和确保愉快的用户体验至关重要。</p>
+<p>官网：<a target="_blank" rel="noopener" href="https://tinypng.com/">https://tinypng.com/</a></p>
+<p><img src="https://img.yeqi.net/tinypng.jpeg" alt="TinyPNG"></p>
+<p>经过我的压缩，一个2.38MB的图片竟然被压缩到了530KB，足足压缩了79%，并且还让照片不失真，这个网站简直太牛了。</p>
+<p>而且它竟然还是免费使用的，这个就更加牛逼克拉斯了。</p>
+<p><img src="https://img.yeqi.net/IMG_20240921_110842.jpg"></p>
+<p>欣赏一下1971年11月建造的建筑物，毕竟现在已经不多见了。虽然它看起来破破烂烂的，但是毕竟是有年代感了。</p>
+<p>当然照片也是经过手机调色的，我个人认为这样的色调更有年代感。</p>
+<hr>
+<p>PS：当然网上还有很多压缩图片的方法，但是我还是觉得这个TinyPNG使用起来，适合我这种小白。</p>
+<p>😄</p>
 
         </div>
 
@@ -200,7 +252,7 @@
                 
                     <p class="copyright-item">
                         <span>Permalink:</span>
-                        <span><a href="https://yeqi.net/free-host-1d080add0d89/">https://yeqi.net/free-host-1d080add0d89/</a></span>
+                        <span><a href="https://yeqi.net/2-376020ad0660/">https://yeqi.net/2-376020ad0660/</a></span>
                     </p>
                 
                 
@@ -224,7 +276,7 @@
                 <span class="tag">
                     
                     
-                        <a href="/tags/%E5%85%8D%E8%B4%B9%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA/"># 免费虚拟主机</a>
+                        <a href="/tags/%E7%85%A7%E7%89%87/"># 照片</a>
                     
                         
                 </span>
@@ -237,10 +289,8 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2-376020ad0660/">老街道的随手一拍的照片与无损压缩照片</a>
             
-            
-            <a class="next" rel="next" href="/1-71c2400c7b65/">这个站点的说明</a>
+            <a class="next" rel="next" href="/free-host-1d080add0d89/">如何申请成为免费的虚拟主机经销商</a>
             
         </section>
 
