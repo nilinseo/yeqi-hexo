@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>夜七</title>
+  
+  
+  <link href="https://yeqi.net/atom.xml" rel="self"/>
+  
+  <link href="https://yeqi.net/"/>
+  <updated>2024-10-12T05:21:58.463Z</updated>
+  <id>https://yeqi.net/</id>
+  
+  <author>
+    <name>夜七笔记</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我自己使用的Chic主题优化存稿</title>
+    <link href="https://yeqi.net/5-a497303d0397/"/>
+    <id>https://yeqi.net/5-a497303d0397/</id>
+    <published>2024-10-12T04:54:47.000Z</published>
+    <updated>2024-10-12T05:21:58.463Z</updated>
+    
+    <content type="html"><![CDATA[<p>这段时间把自己使用的Chic主题更改了一些，顺便记录一下，免得以后忘记自己都更改了哪里。</p><h2 id="增加了footer-ejs文件的两串代码"><a href="#增加了footer-ejs文件的两串代码" class="headerlink" title="增加了footer.ejs文件的两串代码"></a>增加了footer.ejs文件的两串代码</h2><h3 id="本站已运行时间代码"><a href="#本站已运行时间代码" class="headerlink" title="本站已运行时间代码"></a>本站已运行时间代码</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;span&gt;本站已运行 &lt;span id=&quot;days&quot; style=&quot;font-weight:800; color:#ED712E;&quot;&gt; &lt;/span&gt; 天&lt;/span&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line"> let s1 = &#x27;2024-7-14&#x27;;  //设置为你的建站时间</span><br><span class="line">s1 = new Date(s1.replace(/-/g, &quot;/&quot;));</span><br><span class="line">s2 = new Date();</span><br><span class="line">let days = s2.getTime() - s1.getTime();</span><br><span class="line">let number_of_days = parseInt(days / (1000 * 60 * 60 * 24));</span><br><span class="line">document.getElementById(&#x27;days&#x27;).innerHTML = number_of_days;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><h3 id="增加博客年份"><a href="#增加博客年份" class="headerlink" title="增加博客年份"></a>增加博客年份</h3><p>footer.ejs文件中的<span></span>标签内添加配置：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%if (theme.since_year &amp;&amp; theme.since_year &lt; date(new Date(), &quot;YYYY&quot;)) &#123;%&gt;&lt;%- theme.since_year %&gt; - &lt;%&#125;%&gt;&lt;%- date(new Date(), &quot;YYYY&quot;) %&gt;</span><br></pre></td></tr></table></figure><p>在主题的_config.yml中引入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 版权起始年份</span><br><span class="line">since_year: 2024</span><br></pre></td></tr></table></figure><h2 id="增加了一个评论功能"><a href="#增加了一个评论功能" class="headerlink" title="增加了一个评论功能"></a>增加了一个评论功能</h2><p>本来是想着使用现成的Gitalk评论功能的，但是自己死活不会弄，也弄不成，干脆放弃了。最后使用的Cusdis评论功能。</p><h3 id="Cusdis评论"><a href="#Cusdis评论" class="headerlink" title="Cusdis评论"></a>Cusdis评论</h3><p>Cusdis 是一个注重数据隐私的开源的评论系统，十分轻量，经过 gzipped 后大约只有 5kb，</p><p>这个是在：\themes\Chic\layout_page\post.ejs文件里加入了Cusdis官方的代码。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;cusdis_thread&quot;</span><br><span class="line">  data-host=&quot;https://cusdis.com&quot;</span><br><span class="line">  data-app-id=&quot;这里是你自己的id，会自动生成的，我把我的还是隐藏吧&quot;</span><br><span class="line">  data-page-id=&quot;&#123;&#123; PAGE_ID &#125;&#125;&quot;</span><br><span class="line">  data-page-url=&quot;&#123;&#123; PAGE_URL &#125;&#125;&quot;</span><br><span class="line">  data-page-title=&quot;&#123;&#123; PAGE_TITLE &#125;&#125;&quot;</span><br><span class="line">&gt;&lt;/div&gt;</span><br><span class="line">&lt;script async defer src=&quot;https://cusdis.com/js/cusdis.es.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure><p>因为我不会自己部署Cusdis，还是直接使用他们官方的算了，本身咱就是一个小博客。毕竟也没啥人能关注到这么一个小博客哈。</p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>目前就是只是增加了这些，往后在增加了，就在写。</p><p>现在必须得记录，不然时间一长就完全记不住了。正所谓记录记录，不记咋能有目录。😄</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;这段时间把自己使用的Chic主题更改了一些，顺便记录一下，免得以后忘记自己都更改了哪里。&lt;/p&gt;
+&lt;h2 id=&quot;增加了footer-ejs文件的两串代码&quot;&gt;&lt;a href=&quot;#增加了footer-ejs文件的两串代码&quot; class=&quot;headerlink&quot; title=&quot;</summary>
+      
+    
+    
+    
+    
+    <category term="Chic" scheme="https://yeqi.net/tags/Chic/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>难得的一次半日自驾游</title>
+    <link href="https://yeqi.net/4-2a7775e80016/"/>
+    <id>https://yeqi.net/4-2a7775e80016/</id>
+    <published>2024-10-11T13:00:01.000Z</published>
+    <updated>2024-10-11T13:43:17.604Z</updated>
+    
+    <content type="html"><![CDATA[<p>昨天还说没时间出去玩呢，恰巧昨晚上就来消息说，今天上午可以不用上班啦。嘎嘎。正好打算出去玩玩，虽然就一上午的时间，但是架不住，咱早起啊。嘎嘎。</p><p>于是乎，直接早上4点多就醒了，其实早上醒了之后，还懒了一会儿呢，还在考虑就一个上午的时间，有必要把自己折腾的那么累嘛！</p><p>但是回过头来，上午在家闲着也是闲着。直接5点多就出发了，那会天还黑着呢。😄</p><p>直接出发···</p><p><img src="https://img.yeqi.net/IMG_20241011_071804.jpg"></p><p>历时一个半小时到达<strong>邢台最美自驾游路线-抗大路</strong>。到这里之后，天也完全亮起了。</p><h2 id="邢台最美自驾游路线-抗大路"><a href="#邢台最美自驾游路线-抗大路" class="headerlink" title="邢台最美自驾游路线-抗大路"></a>邢台最美自驾游路线-抗大路</h2><blockquote><p>这条路始于邢台市信都区西黄村镇黄店村，止于浆水镇营房台村，全长近50公里。<br>80年前，中国人民抗日军政大学(简称“抗大”)在浆水一带办学。红色血脉，一直在这片热土传承。缘于此，这条路有了一个响亮的名字：抗大路。</p></blockquote><h3 id="先雾缭绕"><a href="#先雾缭绕" class="headerlink" title="先雾缭绕"></a>先雾缭绕</h3><p><img src="https://img.yeqi.net/IMG_20241011_071520.jpg"></p><p>现场看这个地方的时候，真的很震撼，有一个很大的水库，水上面还有朦胧的雾气，怪不得老祖宗说的一个词，特别的好，叫：先雾缭绕。</p><h3 id="那远山-呼唤我"><a href="#那远山-呼唤我" class="headerlink" title="那远山 呼唤我"></a>那远山 呼唤我</h3><p><img src="https://img.yeqi.net/IMG_20241011_071620.jpg"></p><p>这个就像是抖音上经常刷到的一段歌词叫：那远山，呼唤我，</p><p>有仙雾缭绕，依山傍水的风景，那是真的好看。</p><p><img src="https://img.yeqi.net/IMG_20241011_071726.jpg"></p><p>我不会描述，但是如果现场看，更加震撼，更加漂亮。</p><p><img src="https://img.yeqi.net/IMG_20241011_065809.jpg"></p><p>太阳升起之后，也是好看，如果我肚子里有墨水的话，说啥我也得吟诗一首。可惜咱就是一个大老粗。会看不会说，还不会描述，😂😂😂</p><p>总之这段路的风景还是真心不错的，就是咱在这用文字不会描述，当然这是基于咱自己肚子里没啥墨水，😄，一个小学毕业的人，肚子里不可能有墨水啊，但是这段路是真心不错，有山有水。</p><p>而且景色宜人。</p><p>其实路上还有很多的景色以及有趣的地方，是没有拍到的，主要是因为就自己一个人，也没啥好的设备，只有一个手机，随便拍的几张，也是没啥经验。</p><p>以后有时间了，我在重新好好的去转一转。</p><p>主要是昨天睡的太晚，然后今天起的太早，后面开始困了！！！！！！</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;昨天还说没时间出去玩呢，恰巧昨晚上就来消息说，今天上午可以不用上班啦。嘎嘎。正好打算出去玩玩，虽然就一上午的时间，但是架不住，咱早起啊。嘎嘎。&lt;/p&gt;
+&lt;p&gt;于是乎，直接早上4点多就醒了，其实早上醒了之后，还懒了一会儿呢，还在考虑就一个上午的时间，有必要把自己折腾的那么累嘛</summary>
+      
+    
+    
+    
+    <category term="随手一拍" scheme="https://yeqi.net/categories/%E9%9A%8F%E6%89%8B%E4%B8%80%E6%8B%8D/"/>
+    
+    
+    <category term="照片" scheme="https://yeqi.net/tags/%E7%85%A7%E7%89%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>随手一拍的晚照</title>
+    <link href="https://yeqi.net/3-015c335e2dce/"/>
+    <id>https://yeqi.net/3-015c335e2dce/</id>
+    <published>2024-10-09T13:09:42.000Z</published>
+    <updated>2024-10-09T13:21:06.123Z</updated>
+    
+    <content type="html"><![CDATA[<p>一直想找个时间，找一个比较高的地方去看日出，但是也是没有时间！这简直是中年大叔的悲催啊！</p><p>有时候也会在夜里想，为什么现在一点点自由的时间都没了。或许这就是中年人的无奈吧。</p><p>《PS：上有老，下有小，他们都需要我。》</p><p>既然早上的日出没办法看，但是咱们可以看临近黄昏的晚照啊。嘿嘿。</p><p>随手一怕：</p><p><img src="https://img.yeqi.net/IMG_20241009_172605.jpg"></p><p>时间真的不等人啊，已经是一个糟老头子喽。</p><p>我一直认为我还没长大！！！</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;一直想找个时间，找一个比较高的地方去看日出，但是也是没有时间！这简直是中年大叔的悲催啊！&lt;/p&gt;
+&lt;p&gt;有时候也会在夜里想，为什么现在一点点自由的时间都没了。或许这就是中年人的无奈吧。&lt;/p&gt;
+&lt;p&gt;《PS：上有老，下有小，他们都需要我。》&lt;/p&gt;
+&lt;p&gt;既然早上的日出没办</summary>
+      
+    
+    
+    
+    <category term="随手一拍" scheme="https://yeqi.net/categories/%E9%9A%8F%E6%89%8B%E4%B8%80%E6%8B%8D/"/>
+    
+    
+    <category term="照片" scheme="https://yeqi.net/tags/%E7%85%A7%E7%89%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>老街道随手一拍的照片与无损压缩照片</title>
+    <link href="https://yeqi.net/2-376020ad0660/"/>
+    <id>https://yeqi.net/2-376020ad0660/</id>
+    <published>2024-09-23T14:15:03.000Z</published>
+    <updated>2024-10-09T13:21:10.718Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天尝试用手机拍了一张古老建筑的照片，准备放在这篇博文里，但是发现体积太大了，竟然有2.38MB!</p><p><img src="https://img.yeqi.net/2024-09-23.png"></p><p>如果直接放到博文里，那样实在是太大了，并且如果有人打开这个博文的话，就单单一个图片加载时长就让人无法忍受！</p><p>再有一个，本身咱们的这个博客是存放在GitHub的仓库里，也会有滥用的风险，所以一定要想办法给图片压缩一下。</p><p>所以我在网上找到了一种办法，当然本着能不花钱解决问题的心态，就一定不花钱。嘿嘿</p><h2 id="TinyPNG图片智能压缩"><a href="#TinyPNG图片智能压缩" class="headerlink" title="TinyPNG图片智能压缩"></a>TinyPNG图片智能压缩</h2><p>TinyPNG 在不牺牲质量的情况下将文件大小减少多达 80%，从而加快页面加载速度。这种优化对于保持用户注意力和确保愉快的用户体验至关重要。</p><p>官网：<a href="https://tinypng.com/">https://tinypng.com/</a></p><p><img src="https://img.yeqi.net/tinypng.jpeg" alt="TinyPNG"></p><p>经过我的压缩，一个2.38MB的图片竟然被压缩到了530KB，足足压缩了79%，并且还让照片不失真，这个网站简直太牛了。</p><p>而且它竟然还是免费使用的，这个就更加牛逼克拉斯了。</p><p><img src="https://img.yeqi.net/IMG_20240921_110842.jpg"></p><p>欣赏一下1971年11月建造的建筑物，毕竟现在已经不多见了。虽然它看起来破破烂烂的，但是毕竟是有年代感了。</p><p>当然照片也是经过手机调色的，我个人认为这样的色调更有年代感。</p><hr><p>PS：当然网上还有很多压缩图片的方法，但是我还是觉得这个TinyPNG使用起来，适合我这种小白。</p><p>😄</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;今天尝试用手机拍了一张古老建筑的照片，准备放在这篇博文里，但是发现体积太大了，竟然有2.38MB!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://img.yeqi.net/2024-09-23.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;如果直接放到博文里，那样实在是太大了，并且如果有人</summary>
+      
+    
+    
+    
+    <category term="随手一拍" scheme="https://yeqi.net/categories/%E9%9A%8F%E6%89%8B%E4%B8%80%E6%8B%8D/"/>
+    
+    
+    <category term="照片" scheme="https://yeqi.net/tags/%E7%85%A7%E7%89%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何申请成为免费的虚拟主机经销商</title>
+    <link href="https://yeqi.net/free-host-1d080add0d89/"/>
+    <id>https://yeqi.net/free-host-1d080add0d89/</id>
+    <published>2024-09-21T14:26:11.000Z</published>
+    <updated>2024-09-23T14:13:52.139Z</updated>
+    
+    <content type="html"><![CDATA[<p>分享一下我观察了好几年的免费虚拟主机哈。也不算是观察哈，只是有时候会需要简单的用一下这个免费的虚拟主机。所以感觉还不错，正好也写一篇文章记录一下这个主机，不为别的，只是为了以后自己使用的时候方便。</p><p>也顺便记录一下自己申请成为这个免费的主机经销商。当然这个是全部免费的。</p><p>要求：</p><ul><li>域名 《一定是要顶级域名，不可以使用垃圾域名。》</li><li>邮箱 《就是你自己的邮箱。》</li></ul><p>第一步：</p><p>先给自己的域名添加4个NS记录，我用的是我顶级域名的二级域名申请的哈。《free.yeqi.net》</p><p>附图：</p><p><img src="https://img.yeqi.net/free-host1.jpeg" alt="域名ns记录"></p><ul><li>ns1.byet.org</li><li>ns2.byet.org</li><li>ns3.byet.org</li><li>ns4.byet.org</li></ul><p>第二步：</p><p>打开免费主机经销商申请地址：<a href="https://www.myownfreehost.net/createreseller.php">https://www.myownfreehost.net/createreseller.php</a></p><p>填写你要使用的域名以及邮箱，因为第一步已经填写了4个ns记录值，</p><p>附图：</p><p><img src="https://img.yeqi.net/free-host2.jpeg" alt="注册免费虚拟主机经销商"></p><p>在 <strong>Domain name</strong> 处填写你的域名，因为我是使用的二级域名，比如：free.yeqi.net</p><p>在 <strong>Email</strong> 填写你的邮箱。</p><p>之后点击下面的《<strong>CLICK TO SIGN UP</strong>》按钮，</p><p>等待网页变成有英文字段的时候，就可以了，剩下的就是等待他们的配置了。一般是24小时以内就给配置好了。当他们配置好之后，你的邮箱就可以收到管理后台的邮件了。</p><p>附图：</p><p><img src="https://img.yeqi.net/free-host3.jpeg"></p><p>等我这边申请成功后，我在写一篇，如何使用这个免费的虚拟主机哈。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;分享一下我观察了好几年的免费虚拟主机哈。也不算是观察哈，只是有时候会需要简单的用一下这个免费的虚拟主机。所以感觉还不错，正好也写一篇文章记录一下这个主机，不为别的，只是为了以后自己使用的时候方便。&lt;/p&gt;
+&lt;p&gt;也顺便记录一下自己申请成为这个免费的主机经销商。当然这个是全部</summary>
+      
+    
+    
+    
+    <category term="免费资源" scheme="https://yeqi.net/categories/%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90/"/>
+    
+    
+    <category term="免费虚拟主机" scheme="https://yeqi.net/tags/%E5%85%8D%E8%B4%B9%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>这个站点的说明</title>
+    <link href="https://yeqi.net/1-71c2400c7b65/"/>
+    <id>https://yeqi.net/1-71c2400c7b65/</id>
+    <published>2024-09-12T16:06:43.000Z</published>
+    <updated>2024-09-12T16:13:43.358Z</updated>
+    
+    <content type="html"><![CDATA[<p>本来打算这个站点做一个夜骑相关的站点的，但是奈何自己实在是没有这方面的资源以及经历，还是做成一个个人的博客吧，只是可惜了这个域名了，当然只是可惜，嘿嘿，谁让我注册了这个域名呢！</p><p>当然还是觉得这个域名比较好记，并且也简短。</p><p>嗯，就当一个个人博客吧，记录一下我想记录的一些······</p><p>当一个小博客挺好。</p><p><img src="https://img.yeqi.net/blog.jpg"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;本来打算这个站点做一个夜骑相关的站点的，但是奈何自己实在是没有这方面的资源以及经历，还是做成一个个人的博客吧，只是可惜了这个域名了，当然只是可惜，嘿嘿，谁让我注册了这个域名呢！&lt;/p&gt;
+&lt;p&gt;当然还是觉得这个域名比较好记，并且也简短。&lt;/p&gt;
+&lt;p&gt;嗯，就当一个个人博客吧，</summary>
+      
+    
+    
+    
+    
+    <category term="博客" scheme="https://yeqi.net/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hello</title>
+    <link href="https://yeqi.net/hello-c62ea4d389f6/"/>
+    <id>https://yeqi.net/hello-c62ea4d389f6/</id>
+    <published>2024-07-13T16:04:20.000Z</published>
+    <updated>2024-07-18T14:46:56.486Z</updated>
+    
+    <content type="html"><![CDATA[<p>捣鼓了好久，总算是有一点点的眉目了，也算是能写一些小小的文章了，话说网上的这个博客是真的难搞啊。</p><p><strong>域名，GitHub，解析</strong>，等等好多的东西都要搞。等这些东西都搞定之后！又是文章的排版，虽然是比较简单的<strong>Markdown</strong>编写方法，但是依然感觉有点，一个头两个大！</p><p>尤其是增减文章与文章的命名，还有那些超级的链接，搞得头都有点大了。</p><p>不过总算是勉强可以发一下，自己写的文章了，还是比较欣慰的。嘎嘎</p><p><img src="https://img.yeqi.net/hello.png" alt="hello"></p><p>现在继续测试这个博客的各个功能，因为我发现我这边更新了hexo之后，GitHub一直不更新，但是看推送，还是推送成功了，就是GitHub的页面不更新！</p><p>因为自己毕竟这方面接触的少，自己又不是程序员，看很多东西都看不懂，所以只能是删库跑路了，然后重新建立一个仓库，在重新部署一下，看看问题是否还是这样。</p><p>只能是走一步算一步了！</p><p>加油 😄</p><hr><details>  <summary> 这里是被隐藏的一段文字 </summary>这里是被折叠的内容，也是一段被隐藏的文字，</details><hr><p>details：折叠语法标签</p><p>summary：折叠语法展示的摘要</p><p>pre：以原有格式显示元素内的文字是已经格式化的文本</p><p>code：指定代码范例</p><p>blockcode：表示程序的代码块</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;捣鼓了好久，总算是有一点点的眉目了，也算是能写一些小小的文章了，话说网上的这个博客是真的难搞啊。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;域名，GitHub，解析&lt;/strong&gt;，等等好多的东西都要搞。等这些东西都搞定之后！又是文章的排版，虽然是比较简单的&lt;strong&gt;Markd</summary>
+      
+    
+    
+    
+    
+    <category term="hello" scheme="https://yeqi.net/tags/hello/"/>
+    
+  </entry>
+  
+</feed>
