@@ -6,7 +6,7 @@
   <link href="https://yeqi.net/atom.xml" rel="self"/>
   
   <link href="https://yeqi.net/"/>
-  <updated>2024-10-31T16:33:49.779Z</updated>
+  <updated>2024-11-05T02:43:41.224Z</updated>
   <id>https://yeqi.net/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>给博客增加了一个访客统计信息-Umami</title>
+    <link href="https://yeqi.net/9-cdac8665a715/"/>
+    <id>https://yeqi.net/9-cdac8665a715/</id>
+    <published>2024-11-05T02:07:37.000Z</published>
+    <updated>2024-11-05T02:43:41.224Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近在浏览别家博客的时候，看到别家的博主都会在页脚放置一个统计访客的东西，看着还是挺好的，这个对于查看自己这个小站访客是又非常大的帮助的。《PS：虽然自己的小站不咋地，但是别人有的咱也想有。主要是又不花钱···》</p><p>有这么一个访客统计信息可以分析一下都是那些朋友来到咱们这个小站，是通过那些链接来到咱们这个小站的，这样也好优化咱们这个小站，嘎嘎。《PS：就这小破站，能有个人来看就不错了，还优化！优化个毛线！》</p><p><img src="https://img.yeqi.net/umami.jpeg"></p><h1 id="Umami简介"><a href="#Umami简介" class="headerlink" title="Umami简介"></a>Umami简介</h1><p>Umami 是一种开源的、注重隐私的网络分析工具，可替代 Google Analytics。 它提供了对网站流量、用户行为和性能的基本见解，同时优先考虑数据隐私。</p><p>与许多传统分析平台不同，Umami 不收集或存储个人数据，避免了对 cookie 的需求， 并且符合 GDPR 和 PECR 标准。</p><p>Umami 设计为轻量级且易于设置，可以自托管，让用户可以完全控制他们的数据。</p><p>以上是在网上找到的umami统计信息的资料，但是我只需要知道它可以统计我这个小站的访客信息，就行了，像其他的那些：数据.托管以及一些英文，对此我毫不感兴趣。</p><h1 id="Umami操作"><a href="#Umami操作" class="headerlink" title="Umami操作"></a>Umami操作</h1><p>首先去注册一个Umami的账户，基本上就一个邮箱就🆗了，</p><p>打开官网的注册网址：<a href="https://cloud.umami.is/signup?ref=umami-nav-header">https://cloud.umami.is/signup?ref=umami-nav-header</a></p><p>按照需要的资料去填写就好了，网上一大堆教程，我就不在这罗里吧嗦的写了。</p><h2 id="获取跟踪代码"><a href="#获取跟踪代码" class="headerlink" title="获取跟踪代码"></a>获取跟踪代码</h2><p>我们主要是需要获取那个<code>跟踪代码</code>，添加到自己网站中就可以了，附图：</p><p><img src="https://img.yeqi.net/umami1.jpeg"></p><h2 id="获取分享URL"><a href="#获取分享URL" class="headerlink" title="获取分享URL"></a>获取分享URL</h2><p>为啥要弄这个<code>分享URL</code>呢，是因为我不想再查看访客数据的时候，在回头登录Umami官网，等一系列繁琐的操作，所以弄这个<code>分享URL</code>是非常有必要的。简单的说法就是可以随时随地的打开一串网址，就能查看自己小站的统计信息了。</p><p><img src="https://img.yeqi.net/umami2.jpeg"></p><p>我把这个网址做成一个超链接放到我这个小破站的底部了。</p><p><img src="https://img.yeqi.net/umami3.jpeg"></p><p>😁😁😁😁😁😁</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;最近在浏览别家博客的时候，看到别家的博主都会在页脚放置一个统计访客的东西，看着还是挺好的，这个对于查看自己这个小站访客是又非常大的帮助的。《PS：虽然自己的小站不咋地，但是别人有的咱也想有。主要是又不花钱···》&lt;/p&gt;
+&lt;p&gt;有这么一个访客统计信息可以分析一下都是那些朋友</summary>
+      
+    
+    
+    
+    
+    <category term="博客" scheme="https://yeqi.net/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="Umami" scheme="https://yeqi.net/tags/Umami/"/>
+    
+  </entry>
   
   <entry>
     <title>在Chic主题中使用giscus评论</title>

@@ -13,7 +13,7 @@
 
 
 
-<title>如何申请成为免费的虚拟主机经销商 | 夜七笔记</title>
+<title>给博客增加了一个访客统计信息-Umami | 夜七笔记</title>
 
 
 
@@ -132,11 +132,76 @@
                 <div class="container">
     
     
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
 
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">如何申请成为免费的虚拟主机经销商</h1>
+            <h1 class="post-title">给博客增加了一个访客统计信息-Umami</h1>
             
                 <div class="post-meta">
                     
@@ -145,54 +210,32 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">九月 21, 2024&nbsp;&nbsp;22:26:11</a>
+                        Date: <a href="#">十一月 5, 2024&nbsp;&nbsp;10:07:37</a>
                         </span>
                     
-                    
-                        <span class="post-category">
-                    Category:
-                            
-                                <a href="/categories/%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90/">免费资源</a>
-                            
-                        </span>
                     
                 </div>
             
         </header>
 
         <div class="post-content">
-            <p>分享一下我观察了好几年的免费虚拟主机哈。也不算是观察哈，只是有时候会需要简单的用一下这个免费的虚拟主机。所以感觉还不错，正好也写一篇文章记录一下这个主机，不为别的，只是为了以后自己使用的时候方便。</p>
-<p>也顺便记录一下自己申请成为这个免费的主机经销商。当然这个是全部免费的。</p>
-<p>要求：</p>
-<ul>
-<li>域名 《一定是要顶级域名，不可以使用垃圾域名。》</li>
-<li>邮箱 《就是你自己的邮箱。》</li>
-</ul>
-<p>第一步：</p>
-<p>先给自己的域名添加4个NS记录，我用的是我顶级域名的二级域名申请的哈。《free.yeqi.net》</p>
-<p>附图：</p>
-<p><img src="https://img.yeqi.net/free-host1.jpeg" alt="域名ns记录"></p>
-<ul>
-<li>ns1.byet.org</li>
-<li>ns2.byet.org</li>
-<li>ns3.byet.org</li>
-<li>ns4.byet.org</li>
-</ul>
-<p>第二步：</p>
-<p>打开免费主机经销商申请地址：<a target="_blank" rel="noopener" href="https://www.myownfreehost.net/createreseller.php">https://www.myownfreehost.net/createreseller.php</a></p>
-<p>填写你要使用的域名以及邮箱，因为第一步已经填写了4个ns记录值，</p>
-<p>附图：</p>
-<p><img src="https://img.yeqi.net/free-host2.jpeg" alt="注册免费虚拟主机经销商"></p>
-<p>在 <strong>Domain name</strong> 处填写你的域名，因为我是使用的二级域名，比如：free.yeqi.net</p>
-<p>在 <strong>Email</strong> 填写你的邮箱。</p>
-<p>之后点击下面的《<strong>CLICK TO SIGN UP</strong>》按钮，</p>
-<p>等待网页变成有英文字段的时候，就可以了，剩下的就是等待他们的配置了。一般是24小时以内就给配置好了。当他们配置好之后，你的邮箱就可以收到管理后台的邮件了。</p>
-<p>附图：</p>
-<p><img src="https://img.yeqi.net/free-host3.jpeg"></p>
-<p>等我这边申请成功后，我在写一篇，如何使用这个免费的虚拟主机哈。</p>
-<iframe loading="lazy" src="//www.bilibili.com/video/BV1mw411i74V/?share_source=copy_web&vd_source=cacba12adc7e57be6d0be7c0217ce68c" width="640" height="400" frameborder="no" scrolling="no" allowfullscreen="allowfullscreen"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe>
-
-<p>【夜晚的东苑园】 <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1mw411i74V/?share_source=copy_web&vd_source=cacba12adc7e57be6d0be7c0217ce68c">https://www.bilibili.com/video/BV1mw411i74V/?share_source=copy_web&amp;vd_source=cacba12adc7e57be6d0be7c0217ce68c</a></p>
+            <p>最近在浏览别家博客的时候，看到别家的博主都会在页脚放置一个统计访客的东西，看着还是挺好的，这个对于查看自己这个小站访客是又非常大的帮助的。《PS：虽然自己的小站不咋地，但是别人有的咱也想有。主要是又不花钱···》</p>
+<p>有这么一个访客统计信息可以分析一下都是那些朋友来到咱们这个小站，是通过那些链接来到咱们这个小站的，这样也好优化咱们这个小站，嘎嘎。《PS：就这小破站，能有个人来看就不错了，还优化！优化个毛线！》</p>
+<p><img src="https://img.yeqi.net/umami.jpeg"></p>
+<h1 id="Umami简介"><a href="#Umami简介" class="headerlink" title="Umami简介"></a>Umami简介</h1><p>Umami 是一种开源的、注重隐私的网络分析工具，可替代 Google Analytics。 它提供了对网站流量、用户行为和性能的基本见解，同时优先考虑数据隐私。</p>
+<p>与许多传统分析平台不同，Umami 不收集或存储个人数据，避免了对 cookie 的需求， 并且符合 GDPR 和 PECR 标准。</p>
+<p>Umami 设计为轻量级且易于设置，可以自托管，让用户可以完全控制他们的数据。</p>
+<p>以上是在网上找到的umami统计信息的资料，但是我只需要知道它可以统计我这个小站的访客信息，就行了，像其他的那些：数据.托管以及一些英文，对此我毫不感兴趣。</p>
+<h1 id="Umami操作"><a href="#Umami操作" class="headerlink" title="Umami操作"></a>Umami操作</h1><p>首先去注册一个Umami的账户，基本上就一个邮箱就🆗了，</p>
+<p>打开官网的注册网址：<a target="_blank" rel="noopener" href="https://cloud.umami.is/signup?ref=umami-nav-header">https://cloud.umami.is/signup?ref=umami-nav-header</a></p>
+<p>按照需要的资料去填写就好了，网上一大堆教程，我就不在这罗里吧嗦的写了。</p>
+<h2 id="获取跟踪代码"><a href="#获取跟踪代码" class="headerlink" title="获取跟踪代码"></a>获取跟踪代码</h2><p>我们主要是需要获取那个<code>跟踪代码</code>，添加到自己网站中就可以了，附图：</p>
+<p><img src="https://img.yeqi.net/umami1.jpeg"></p>
+<h2 id="获取分享URL"><a href="#获取分享URL" class="headerlink" title="获取分享URL"></a>获取分享URL</h2><p>为啥要弄这个<code>分享URL</code>呢，是因为我不想再查看访客数据的时候，在回头登录Umami官网，等一系列繁琐的操作，所以弄这个<code>分享URL</code>是非常有必要的。简单的说法就是可以随时随地的打开一串网址，就能查看自己小站的统计信息了。</p>
+<p><img src="https://img.yeqi.net/umami2.jpeg"></p>
+<p>我把这个网址做成一个超链接放到我这个小破站的底部了。</p>
+<p><img src="https://img.yeqi.net/umami3.jpeg"></p>
+<p>😁😁😁😁😁😁</p>
 
         </div>
 
@@ -207,7 +250,7 @@
                 
                     <p class="copyright-item">
                         <span>Permalink:</span>
-                        <span><a href="https://yeqi.net/free-host-1d080add0d89/">https://yeqi.net/free-host-1d080add0d89/</a></span>
+                        <span><a href="https://yeqi.net/9-cdac8665a715/">https://yeqi.net/9-cdac8665a715/</a></span>
                     </p>
                 
                 
@@ -231,7 +274,9 @@
                 <span class="tag">
                     
                     
-                        <a href="/tags/%E5%85%8D%E8%B4%B9%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA/"># 免费虚拟主机</a>
+                        <a href="/tags/%E5%8D%9A%E5%AE%A2/"># 博客</a>
+                    
+                        <a href="/tags/Umami/"># Umami</a>
                     
                         
                 </span>
@@ -244,10 +289,8 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2-376020ad0660/">老街道随手一拍的照片与无损压缩照片</a>
             
-            
-            <a class="next" rel="next" href="/1-71c2400c7b65/">这个站点的说明</a>
+            <a class="next" rel="next" href="/8-d9fa1c7a51fd/">在Chic主题中使用giscus评论</a>
             
         </section>
         <script src="https://giscus.app/client.js"
