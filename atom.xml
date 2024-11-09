@@ -6,7 +6,7 @@
   <link href="https://yeqi.net/atom.xml" rel="self"/>
   
   <link href="https://yeqi.net/"/>
-  <updated>2024-11-05T12:42:14.570Z</updated>
+  <updated>2024-11-09T15:39:15.554Z</updated>
   <id>https://yeqi.net/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>freehost主机申请篇</title>
+    <link href="https://yeqi.net/free-host-1-608df9ad8726/"/>
+    <id>https://yeqi.net/free-host-1-608df9ad8726/</id>
+    <published>2024-11-09T15:37:51.000Z</published>
+    <updated>2024-11-09T15:39:15.554Z</updated>
+    
+    <content type="html"><![CDATA[<p>在上一篇文章《*<a href="https://yeqi.net/free-host-1d080add0d89/">如何申请成为免费的虚拟主机经销商</a>*》中我写了如何申请成为免费主机经销商。</p><p>这个文章中我写一下，如何申请这个免费主机，当然如果你没有看过上一篇文章，只看这个文章也是没有问题的，毕竟咱们的目的，就是获得一个可以练手使用的免费主机哈。</p><p>废话不多说了，直接开整：</p><h1 id="申请免费主机的方法"><a href="#申请免费主机的方法" class="headerlink" title="申请免费主机的方法"></a>申请免费主机的方法</h1><p>首先打开这个免费主机的申请地址：<a href="http://freehost.yeqi.net/signup.php">http://freehost.yeqi.net/signup.php</a></p><p>并且填写相关的资料，《PS我直接把相关部分的英文改成中文了，只改了咱们要用到的地方，其他的地方我懒得改。》</p><p><img src="https://img.yeqi.net/freehost.jpeg"></p><ul><li>用户名：就是账户名称，如：zhangsan</li><li>密码： 你登陆账户的密码。</li><li>邮箱：就是你的邮箱，比如QQ邮箱。</li><li>网站类型：随便选，都行</li><li>站点语言：随便选，都行</li><li>安全码：就是验证码，需要填写到下面的输入框中。</li><li>输入安全码：把上面的验证码写道这个输入框中。</li><li>最后一步，提交。</li></ul><p> <img src="https://img.yeqi.net/freehost1.jpeg"></p><p>当你看到这个页面的时候，整个的申请过程，就是这么的简单。剩下的就是等待发给自己的邮件了。</p><p>这个邮件基本上是秒传的，当你收到邮件名称为：<code>Action required to activate hosting account yeqiseo.freehost.yeqi.net</code>的时候，就打开这个邮件的里面的链接，确认一下是这个邮箱申请的就可以了。</p><p><img src="https://img.yeqi.net/freehost2.jpeg"></p><p>当你打开这个确认链接之后会看到，这个免费主机已经申请成功，同时也有显示你的账户以及管理面板，当然随后你的邮箱也会收到一封：<code>Your new freehost.yeqi.net hosting account</code>的邮件，这个邮件中包含了，管理这个主机的网址，以及管理主机的账户，还有密码，都包含在这个邮件当中。</p><p><img src="https://img.yeqi.net/freehost3.jpeg"></p><p>到此，这个免费主机就申请成功了，并且这个免费的主机，你就可以随便玩啦，</p><p>提醒一下：这个免费主机只适合练练手，学习一下使用Cpanel面板操作管理主机，还有不要在这个主机里放重要资料，因为这个免费主机是使用不了多久，就会自动销毁了，所以这个免费真的只适合练手以及测试一些文件使用。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;在上一篇文章《*&lt;a href=&quot;https://yeqi.net/free-host-1d080add0d89/&quot;&gt;如何申请成为免费的虚拟主机经销商&lt;/a&gt;*》中我写了如何申请成为免费主机经销商。&lt;/p&gt;
+&lt;p&gt;这个文章中我写一下，如何申请这个免费主机，当然如果你没有看过</summary>
+      
+    
+    
+    
+    <category term="免费资源" scheme="https://yeqi.net/categories/%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90/"/>
+    
+    
+    <category term="免费虚拟主机" scheme="https://yeqi.net/tags/%E5%85%8D%E8%B4%B9%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>给博客增加了一个访客统计信息-Umami</title>
@@ -229,9 +254,9 @@
     <link href="https://yeqi.net/free-host-1d080add0d89/"/>
     <id>https://yeqi.net/free-host-1d080add0d89/</id>
     <published>2024-09-21T14:26:11.000Z</published>
-    <updated>2024-11-05T12:47:53.085Z</updated>
+    <updated>2024-11-09T14:42:34.616Z</updated>
     
-    <content type="html"><![CDATA[<p>分享一下我观察了好几年的免费虚拟主机哈。也不算是观察哈，只是有时候会需要简单的用一下这个免费的虚拟主机。所以感觉还不错，正好也写一篇文章记录一下这个主机，不为别的，只是为了以后自己使用的时候方便。</p><p>也顺便记录一下自己申请成为这个免费的主机经销商。当然这个是全部免费的。</p><p>要求：</p><ul><li>域名 《一定是要顶级域名，不可以使用垃圾域名。》</li><li>邮箱 《就是你自己的邮箱。》</li></ul><p>第一步：</p><p>先给自己的域名添加4个NS记录，我用的是我顶级域名的二级域名申请的哈。《freehost.yeqi.net》</p><p>附图：</p><p><img src="https://img.yeqi.net/free-host1.jpeg" alt="域名ns记录"></p><ul><li>ns1.byet.org</li><li>ns2.byet.org</li><li>ns3.byet.org</li><li>ns4.byet.org</li></ul><p>第二步：</p><p>打开免费主机经销商申请地址：<a href="https://www.myownfreehost.net/createreseller.php">https://www.myownfreehost.net/createreseller.php</a></p><p>填写你要使用的域名以及邮箱，因为第一步已经填写了4个ns记录值，</p><p>附图：</p><p><img src="https://img.yeqi.net/free-host2.jpeg" alt="注册免费虚拟主机经销商"></p><p>在 <strong>Domain name</strong> 处填写你的域名，因为我是使用的二级域名，比如：free.yeqi.net</p><p>在 <strong>Email</strong> 填写你的邮箱。</p><p>之后点击下面的《<strong>CLICK TO SIGN UP</strong>》按钮，</p><p>等待网页变成有英文字段的时候，就可以了，剩下的就是等待他们的配置了。一般是24小时以内就给配置好了。当他们配置好之后，你的邮箱就可以收到管理后台的邮件了。</p><p>附图：</p><p><img src="https://img.yeqi.net/free-host3.jpeg"></p><p>等我这边申请成功后，我在写一篇，如何使用这个免费的虚拟主机哈。</p><iframe loading="lazy" src="//www.bilibili.com/video/BV1mw411i74V/?share_source=copy_web&vd_source=cacba12adc7e57be6d0be7c0217ce68c" width="640" height="400" frameborder="no" scrolling="no" allowfullscreen="allowfullscreen"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe><p>【夜晚的东苑园】 <a href="https://www.bilibili.com/video/BV1mw411i74V/?share_source=copy_web&vd_source=cacba12adc7e57be6d0be7c0217ce68c">https://www.bilibili.com/video/BV1mw411i74V/?share_source=copy_web&amp;vd_source=cacba12adc7e57be6d0be7c0217ce68c</a></p>]]></content>
+    <content type="html"><![CDATA[<p>分享一下我观察了好几年的免费虚拟主机哈。也不算是观察哈，只是有时候会需要简单的用一下这个免费的虚拟主机。所以感觉还不错，正好也写一篇文章记录一下这个主机，不为别的，只是为了以后自己使用的时候方便。</p><p>也顺便记录一下自己申请成为这个免费的主机经销商。当然这个是全部免费的。</p><p>要求：</p><ul><li>域名 《一定是要顶级域名，不可以使用垃圾域名。》</li><li>邮箱 《就是你自己的邮箱。》</li></ul><p>第一步：</p><p>先给自己的域名添加4个NS记录，我用的是我顶级域名的二级域名申请的哈。《freehost.yeqi.net》</p><p>附图：</p><p><img src="https://img.yeqi.net/free-host1.jpeg" alt="域名ns记录"></p><ul><li>ns1.byet.org</li><li>ns2.byet.org</li><li>ns3.byet.org</li><li>ns4.byet.org</li></ul><p>第二步：</p><p>打开免费主机经销商申请地址：<a href="https://www.myownfreehost.net/createreseller.php">https://www.myownfreehost.net/createreseller.php</a></p><p>填写你要使用的域名以及邮箱，因为第一步已经填写了4个ns记录值，</p><p>附图：</p><p><img src="https://img.yeqi.net/free-host2.jpeg" alt="注册免费虚拟主机经销商"></p><p>在 <strong>Domain name</strong> 处填写你的域名，因为我是使用的二级域名，比如：<a href="https://freehost.yeqi.net/">https://freehost.yeqi.net</a></p><p>在 <strong>Email</strong> 填写你的邮箱。</p><p>之后点击下面的《<strong>CLICK TO SIGN UP</strong>》按钮，</p><p>等待网页变成有英文字段的时候，就可以了，剩下的就是等待他们的配置了。一般是24小时以内就给配置好了。当他们配置好之后，你的邮箱就可以收到管理后台的邮件了。</p><p>附图：</p><p><img src="https://img.yeqi.net/free-host3.jpeg"></p><p>等我这边申请成功后，我在写一篇，如何使用这个免费的虚拟主机哈。</p>]]></content>
     
     
       
