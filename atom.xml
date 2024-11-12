@@ -6,7 +6,7 @@
   <link href="https://yeqi.net/atom.xml" rel="self"/>
   
   <link href="https://yeqi.net/"/>
-  <updated>2024-11-09T15:39:15.554Z</updated>
+  <updated>2024-11-12T13:33:37.895Z</updated>
   <id>https://yeqi.net/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>给上次自驾游玩拍的一些好看的照片弄成小视频玩</title>
+    <link href="https://yeqi.net/10-7e2770adec04/"/>
+    <id>https://yeqi.net/10-7e2770adec04/</id>
+    <published>2024-11-12T13:17:11.000Z</published>
+    <updated>2024-11-12T13:33:37.895Z</updated>
+    
+    <content type="html"><![CDATA[<iframe width="780" height="450" src="https://img.yeqi.net/zijia.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>闲着也是闲着，给上次自驾游玩拍的一些好看的照片弄成小视频玩，效果还是不错地，可惜了找不到好的平台存放，本来打算放到B站的，但是发现把视频嵌入到文章之后，不清晰，想想还是弄到GitHub里算了，等我找到好的存放平台在说。]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;iframe width=&quot;780&quot; height=&quot;450&quot; src=&quot;https://img.yeqi.net/zijia.mp4&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyros</summary>
+      
+    
+    
+    
+    <category term="随手一拍" scheme="https://yeqi.net/categories/%E9%9A%8F%E6%89%8B%E4%B8%80%E6%8B%8D/"/>
+    
+    
+    <category term="照片" scheme="https://yeqi.net/tags/%E7%85%A7%E7%89%87/"/>
+    
+  </entry>
   
   <entry>
     <title>freehost主机申请篇</title>
