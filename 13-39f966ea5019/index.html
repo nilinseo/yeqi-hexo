@@ -136,6 +136,71 @@
                 <div class="container">
     
     
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
 
     
     <article class="post-wrap">
@@ -168,6 +233,18 @@
             <p>更新啦，一个冬天没回家了，还是在家里舒服，有屋有院的也安静舒服，不像小区里屋顶和楼上的公用，墙壁跟邻居公用，又不隔音！</p>
 <p>尤其是半夜，有点声音整个单元都听得一清二楚的。</p>
 <p>感觉还是家里舒服并且安静祥和。</p>
+<p>今天有时间了顺便记录一下最近一段时间区过的地方，嘿嘿。</p>
+<h2 id="邯郸市-古武当山"><a href="#邯郸市-古武当山" class="headerlink" title="邯郸市-古武当山"></a>邯郸市-古武当山</h2><p>夜爬古武当山，可惜没上去，就在山脚下转悠一圈，主要是孩子上不去！</p>
+<p><img src="https://img.yeqi.net/IMG_20241006_222202%20(1).jpg"></p>
+<h2 id="邢台市-南和区-万佛塔"><a href="#邢台市-南和区-万佛塔" class="headerlink" title="邢台市-南和区-万佛塔"></a>邢台市-南和区-万佛塔</h2><p>万佛塔是一个适合带孩子消遣的地方，一个藏在住宿楼里的公园，整体面积不大，适合溜溜弯，看看夜景。</p>
+<p><img src="https://img.yeqi.net/IMG_20250205_202050%20(1).jpg"></p>
+<h2 id="邯郸市-大名县-大名石刻博物馆"><a href="#邯郸市-大名县-大名石刻博物馆" class="headerlink" title="邯郸市-大名县-大名石刻博物馆"></a>邯郸市-大名县-大名石刻博物馆</h2><p>大名石刻博物馆这个地方也不算太大，我比较感兴趣的是博物馆里面的东西，那是真有年代感的东西了。</p>
+<p><img src="https://img.yeqi.net/IMG_20250212_184938%20(1).jpg"></p>
+<h2 id="邢台市-清风楼"><a href="#邢台市-清风楼" class="headerlink" title="邢台市-清风楼"></a>邢台市-清风楼</h2><p>清风楼这个地方，也还行，去的时候人是真的多!但是非常适合饭后散步。</p>
+<p><img src="https://img.yeqi.net/IMG_20250209_215336%20(1).jpg"></p>
+<h2 id="总结一下"><a href="#总结一下" class="headerlink" title="总结一下"></a>总结一下</h2><p>带孩子出门就不能去太浪费体力的地方，不要问我咋知道的，说多了都是累!</p>
+<p>为啥都是夜景！</p>
+<p>因为白天要当牛马，晚上才有那么一丢丢时间是属于家庭的，当然这点时间并不属于我自己！！！！！😂😂😂😂😂😂</p>
 
         </div>
 
