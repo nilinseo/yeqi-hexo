@@ -6,7 +6,7 @@
   <link href="https://yeqi.net/atom.xml" rel="self"/>
   
   <link href="https://yeqi.net/"/>
-  <updated>2025-04-01T14:15:18.022Z</updated>
+  <updated>2025-04-04T15:33:14.740Z</updated>
   <id>https://yeqi.net/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>文章中添加好看的内容框</title>
+    <link href="https://yeqi.net/15-761ef07d3186/"/>
+    <id>https://yeqi.net/15-761ef07d3186/</id>
+    <published>2025-04-04T15:16:30.000Z</published>
+    <updated>2025-04-04T15:33:14.740Z</updated>
+    
+    <content type="html"><![CDATA[<p>在网络中找到一些不错的东西，纯代码实现的特效哈。原创作者的博文地址我找不到了！！！</p><p>因为这些代码是当时在原创博客的博文中先直接复制然后在保存到本地的文本文件中，等回头我写文章的时候，是怎么也找不到原创的作者博客文章了！</p><p>这些内容框的代码确实是非常深受老夫喜爱，就先厚着脸皮收藏了。</p><hr><p>迷幻紫</p><div style="color: #555555;overflow: hidden;margin: 10px 0;padding: 15px 15px 15px 35px;border-radius: 10px;box-shadow: 6px 0 12px -5px rgb(190, 196, 252), -6px 0 12px -5px rgb(189, 196, 252);background-color: #8EC5FC;background-image: linear-gradient(62deg,#8EC5FC 0%,#E0C3FC 100%);background-image: -webkit-linear-gradient(62deg,#8EC5FC 0%,#E0C3FC 100%);">在这里输入文本</div><p>西瓜红</p><div style="color: #555555;overflow: hidden;margin: 10px 0;padding: 15px 15px 15px 35px;border-radius: 10px;box-shadow: 6px 0 12px -5px rgb(255, 176, 172), -6px 0 12px -5px rgb(255, 161, 174);background-color: #ff9a8b66;background-image: linear-gradient(220deg,#FF9A8B 0%,#ff6a8838 55%,#FF99AC 100%);background-image: -webkit-linear-gradient(220deg,#ff9a8b7a 0%,#ff6a88ab 55%,#ff99ac82 100%);">在这里输入文本</div><p>天空之境</p><div style="color: #555555;overflow: hidden;margin: 10px 0;padding: 15px 15px 15px 35px;border-radius: 10px;box-shadow: 6px 0 12px -5px rgb(253, 223, 234), -6px 0 12px -5px rgb(215, 240, 243);background-color: #FFDEE9;background-image: linear-gradient(0deg,#ffdee9c4 0%,#b5fffc8f 100%);background-image: -webkit-linear-gradient(0deg,#ffdee9c4 0%,#b5fffc8f 100%);">在这里输入文本</div><p>小宇宙</p><div style="color: #eeeeee;overflow: hidden;margin: 10px 0;padding: 15px 15px 15px 35px;border-radius: 10px;box-shadow: 6px 0 12px -5px rgb(12, 85, 141), -6px 0 12px -5px rgba(10, 58, 93, 0);background-image: radial-gradient( circle 263px at 100.2% 3%, rgba(12,85,141,1) 31.1%, rgba(205,181,93,1) 36.4%, rgba(244,102,90,1) 50.9%, rgba(199,206,187,1) 60.7%, rgba(249,140,69,1) 72.5%, rgba(12,73,116,1) 72.6% );">在这里输入文本</div><p>橄榄绿</p><div style="color: #eeeeee;overflow: hidden;margin: 10px 0;padding: 15px 15px 15px 35px;border-radius: 10px;box-shadow: 6px 0 12px -5px rgb(68, 110, 92), -6px 0 12px -5px rgb(204, 212, 163);background-image: linear-gradient( 102deg, rgba(68,110,92,1) 17.4%, rgba(107,156,120,1) 49.3%, rgba(154,183,130,1) 83.4%, rgba(247,237,191,1) 110.3% );">在这里输入文本</div><p>小太阳</p><div style="color: #ffffff;overflow: hidden;margin: 10px 0;padding: 15px 15px 15px 35px;border-radius: 10px; box-shadow: 6px 0 12px -5px rgb(253, 223, 234), -6px 0 12px -5px rgb(215, 240, 243);background-image: radial-gradient( circle farthest-corner at -8.9% 51.2%, rgba(255,124,0,1) 0%, rgba(255,124,0,1) 15.9%, rgba(255,163,77,1) 15.9%, rgba(255,163,77,1) 24.4%, rgba(19,30,37,1) 24.5%, rgba(19,30,37,1) 66% );">在这里输入文本</div><p>优雅紫</p><div style="color: #ffffff;overflow: hidden;margin: 10px 0;padding: 15px 15px 15px 35px;border-radius: 10px;box-shadow: 6px 0 12px -5px rgb(175, 160, 208), -6px 0 12px -5px rgba(177, 161, 207, 0);background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(95,117,227,1) 0%, rgba(188,167,205,1) 90% );">在这里输入文本</div><p>深邃黑</p><div style="color: #c7c7c7;overflow: hidden;margin: 10px 0;padding: 15px 15px 15px 35px;border-radius: 5px;box-shadow: 6px 0 12px -5px rgb(155, 170, 185), -6px 0 12px -5px rgba(177, 161, 207, 0);background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(0,0,0,1) 0%, rgba(64,64,64,1) 90.2% );">在这里输入文本</div><hr><p>最近循环听的一首歌《天际》，演唱者：洋澜一</p><p>尤其是在查阅资料的时候，当背景音乐是真的挺不错的。嘎嘎</p><iframe width="100%" height="600" frameborder="0" src="https://open.douyin.com/player/video?vid=7312946073062968612&autoplay=0" referrerpolicy="unsafe-url" allowfullscreen></iframe>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;在网络中找到一些不错的东西，纯代码实现的特效哈。原创作者的博文地址我找不到了！！！&lt;/p&gt;
+&lt;p&gt;因为这些代码是当时在原创博客的博文中先直接复制然后在保存到本地的文本文件中，等回头我写文章的时候，是怎么也找不到原创的作者博客文章了！&lt;/p&gt;
+&lt;p&gt;这些内容框的代码确实是非常</summary>
+      
+    
+    
+    
+    <category term="个人随笔" scheme="https://yeqi.net/categories/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/"/>
+    
+    
+    <category term="音乐" scheme="https://yeqi.net/tags/%E9%9F%B3%E4%B9%90/"/>
+    
+    <category term="内容框" scheme="https://yeqi.net/tags/%E5%86%85%E5%AE%B9%E6%A1%86/"/>
+    
+  </entry>
   
   <entry>
     <title>博客备份</title>
