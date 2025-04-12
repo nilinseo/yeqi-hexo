@@ -6,7 +6,7 @@
   <link href="https://yeqi.net/atom.xml" rel="self"/>
   
   <link href="https://yeqi.net/"/>
-  <updated>2025-04-04T15:33:14.740Z</updated>
+  <updated>2025-04-12T14:25:15.164Z</updated>
   <id>https://yeqi.net/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>有了AI还需要记录笔记吗？</title>
+    <link href="https://yeqi.net/16-a1c7ff75a87b/"/>
+    <id>https://yeqi.net/16-a1c7ff75a87b/</id>
+    <published>2025-04-12T13:55:26.000Z</published>
+    <updated>2025-04-12T14:25:15.164Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近大火的AI，好像被宣扬的无所不能，尤其是一些搜索和整理以及推理能力真的很棒，确实使用AI工具可以让我们操作一些东西的时候更加的得心应手。所以我也在思考以后要不要不在记录笔记。</p><p><img src="https://img.yeqi.net/ai.jpg"></p><p>先说我的观点：我觉得是错误的，现阶段的AI更像是一个智能搜索引擎，存在“幻觉”，但你的笔记是经过你验证的，在特定场合下是可以直接使用的</p><p>一些东西确实AI可以做的更好，这一点是不容置疑的。</p><p>但是反过来我又想了一下，如果以后我不在记录笔记，有什么问题直接丢给AI的话，在以后的日子里是否是个可行的办法。以及以后这样的结果会不会让我更加的快捷与便利？</p><p>就目前来看：</p><ul><li><p>AI优点：首先，AI可以处理大量的复杂数据，快速提取有用的信息和模式，从而帮助人们作出更明智的决策。其次，AI可以替代一些重复性、低技能的工作，提高工作效率和生产力。</p></li><li><p>AI缺点：AI也存在一些局限性和挑战。首先，AI需要大量的数据进行训练和学习，而数据的质量和数量对其性能有着重要影响。其次，AI还存在诸如数据隐私和安全风险等问题。在使用AI的过程中，个人隐私可能会受到侵犯，并且恶意使用AI技术可能导致安全风险。此外，AI的智能水平相对有限，目前还无法达到人类智能的全部方面。AI在处理复杂的、模糊的问题时可能会出现错误或无法给出准确的答案。因此，人们需要谨慎对待AI技术的应用，保持对其局限性和挑战的认识。</p></li></ul><hr><p>根据AI现在的优点和缺点来说，我或许会放弃一些重复性以及低技能的笔记，同时我个人的考虑：就像十几年前，我们不会考虑有AI这个东西，也不知道十几年后AI的发展会变成什么样子。也许十几年后又会有另一种变化，这个是不可控的。</p><p>同时有一些笔记是一定要记录的，因为咱们无法预知AI这个工具，后期会有那些不一样的变化。</p><p>就目前来说，我个人还是习惯使用搜索+AI去找我想要的资料，如果是你，你会怎么选？</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;最近大火的AI，好像被宣扬的无所不能，尤其是一些搜索和整理以及推理能力真的很棒，确实使用AI工具可以让我们操作一些东西的时候更加的得心应手。所以我也在思考以后要不要不在记录笔记。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://img.yeqi.net/ai.jpg&quot;&gt;&lt;</summary>
+      
+    
+    
+    
+    <category term="个人随笔" scheme="https://yeqi.net/categories/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/"/>
+    
+    
+    <category term="笔记" scheme="https://yeqi.net/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="AI" scheme="https://yeqi.net/tags/AI/"/>
+    
+  </entry>
   
   <entry>
     <title>文章中添加好看的内容框</title>
