@@ -6,7 +6,7 @@
   <link href="https://yeqi.net/atom.xml" rel="self"/>
   
   <link href="https://yeqi.net/"/>
-  <updated>2025-04-13T13:38:35.188Z</updated>
+  <updated>2025-04-15T14:16:34.378Z</updated>
   <id>https://yeqi.net/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>获取哔哩哔哩视频里的aid和cid</title>
+    <link href="https://yeqi.net/18-966377664f15/"/>
+    <id>https://yeqi.net/18-966377664f15/</id>
+    <published>2025-04-15T13:45:16.000Z</published>
+    <updated>2025-04-15T14:16:34.378Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天长本事了哈，起因是因为想把哔哩哔哩的一段视频嵌入到网页中，本来使用官方的代码是可以的，但是我发现官方的代码在宽屏幕的状况下，两边会出现黑边，很严重的黑边。</p><p>官方提供的iframe代码</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe src=&quot;//player.bilibili.com/player.html?aid=375588815&amp;bvid=BV1so4y1m7U5&amp;cid=339262048&amp;page=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;</span><br></pre></td></tr></table></figure><p>话说我想着这也太难看了，就在网上搜了一下解决方案，有大神修改的官方的iframe代码，来达成自己想要的效果，</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div style=&quot;position: relative; padding: 30% 45%;&quot;&gt;</span><br><span class="line">&lt;iframe style=&quot;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&quot; src=&quot;https://player.bilibili.com/player.html?aid=995041626&amp;bvid=BV14s4y127Me&amp;cid=1099182253&amp;page=1&amp;as_wide=1&amp;high_quality=1&amp;danmaku=0&quot; frameborder=&quot;no&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure><p>看明显这两串代码是不一样的，第二个代码要比第一个多了很多东西，</p><h2 id="参数说明"><a href="#参数说明" class="headerlink" title="参数说明"></a>参数说明</h2><ul><li>high_quality&#x3D;1: 设置视频为最高画质（1080P）。</li><li>danmaku&#x3D;0: 关闭弹幕。</li><li>allowfullscreen: 允许全屏播放。</li><li>sandbox: 限制iframe中的内容，防止跳转到B站</li><li>as_wide&#x3D;1: 设置为宽屏模式。</li><li>width&#x3D;”100%” height&#x3D;”500”: 设置iframe的宽度和高度，可以根据需要调整</li></ul><p>第二段代码要是简单的修改<font color="red">bvid</font>并不会直接显示你要嵌入的视频，还需要修改<font color="red">aid</font>和<font color="red">cid</font>，但是这个<font color="red">aid</font>和<font color="red">cid</font>咱们要怎么获取呢？</p><p>网上的方法很多，我就写一下我使用的方法哈，直接在我们要嵌入的哔哩哔哩视频页面右键→检查，</p><p><img src="https://img.yeqi.net/bilibili-cid.webp"><br>随便打开一个total就会有显示<font color="red">aid</font>和<font color="red">cid</font>，甚至<font color="red">bvid</font>也会一起显示哈。<br><img src="https://img.yeqi.net/bilibili-cid1.webp"></p><p>牛逼，果然网上是有真大神。嘎嘎。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;今天长本事了哈，起因是因为想把哔哩哔哩的一段视频嵌入到网页中，本来使用官方的代码是可以的，但是我发现官方的代码在宽屏幕的状况下，两边会出现黑边，很严重的黑边。&lt;/p&gt;
+&lt;p&gt;官方提供的iframe代码&lt;/p&gt;
+&lt;figure class=&quot;highlight plainte</summary>
+      
+    
+    
+    
+    <category term="个人随笔" scheme="https://yeqi.net/categories/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/"/>
+    
+    
+    <category term="哔哩哔哩" scheme="https://yeqi.net/tags/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9/"/>
+    
+  </entry>
   
   <entry>
     <title>生活中的一些感悟</title>
@@ -507,29 +533,6 @@
     
     
     <category term="博客" scheme="https://yeqi.net/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hello</title>
-    <link href="https://yeqi.net/hello-c62ea4d389f6/"/>
-    <id>https://yeqi.net/hello-c62ea4d389f6/</id>
-    <published>2024-07-13T16:04:20.000Z</published>
-    <updated>2024-07-18T14:46:56.486Z</updated>
-    
-    <content type="html"><![CDATA[<p>捣鼓了好久，总算是有一点点的眉目了，也算是能写一些小小的文章了，话说网上的这个博客是真的难搞啊。</p><p><strong>域名，GitHub，解析</strong>，等等好多的东西都要搞。等这些东西都搞定之后！又是文章的排版，虽然是比较简单的<strong>Markdown</strong>编写方法，但是依然感觉有点，一个头两个大！</p><p>尤其是增减文章与文章的命名，还有那些超级的链接，搞得头都有点大了。</p><p>不过总算是勉强可以发一下，自己写的文章了，还是比较欣慰的。嘎嘎</p><p><img src="https://img.yeqi.net/hello.png" alt="hello"></p><p>现在继续测试这个博客的各个功能，因为我发现我这边更新了hexo之后，GitHub一直不更新，但是看推送，还是推送成功了，就是GitHub的页面不更新！</p><p>因为自己毕竟这方面接触的少，自己又不是程序员，看很多东西都看不懂，所以只能是删库跑路了，然后重新建立一个仓库，在重新部署一下，看看问题是否还是这样。</p><p>只能是走一步算一步了！</p><p>加油 😄</p><hr><details>  <summary> 这里是被隐藏的一段文字 </summary>这里是被折叠的内容，也是一段被隐藏的文字，</details><hr><p>details：折叠语法标签</p><p>summary：折叠语法展示的摘要</p><p>pre：以原有格式显示元素内的文字是已经格式化的文本</p><p>code：指定代码范例</p><p>blockcode：表示程序的代码块</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;捣鼓了好久，总算是有一点点的眉目了，也算是能写一些小小的文章了，话说网上的这个博客是真的难搞啊。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;域名，GitHub，解析&lt;/strong&gt;，等等好多的东西都要搞。等这些东西都搞定之后！又是文章的排版，虽然是比较简单的&lt;strong&gt;Markd</summary>
-      
-    
-    
-    
-    
-    <category term="hello" scheme="https://yeqi.net/tags/hello/"/>
     
   </entry>
   
