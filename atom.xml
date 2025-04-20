@@ -6,7 +6,7 @@
   <link href="https://yeqi.net/atom.xml" rel="self"/>
   
   <link href="https://yeqi.net/"/>
-  <updated>2025-04-19T13:13:55.942Z</updated>
+  <updated>2025-04-20T14:24:06.993Z</updated>
   <id>https://yeqi.net/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Claw Cloud Run 免费容器来了无需信用卡Github账号满180天，终身每月送5刀</title>
+    <link href="https://yeqi.net/20-278bcdd690e5/"/>
+    <id>https://yeqi.net/20-278bcdd690e5/</id>
+    <published>2025-04-20T14:10:56.000Z</published>
+    <updated>2025-04-20T14:24:06.993Z</updated>
+    
+    <content type="html"><![CDATA[<p>Claw是近年才出线的云服务商，提供的服务线路基本上与阿里云相同，但性价比更高，可以看作是阿里云还没承认的私生仔，有点类似于小米旗下的红米子品牌，换个牌子可以放下身段、法务、规则等等限制，扯远了，今天主要介绍一下如何撸刚出的免费容器，最高可用配置可达4H8G</p><p>Claw Cloud Run是 Claw Cloud 旗下的轻应用平台，你可以理解成 <code>Vercel、Netlify</code> 之类的东西，既是 PaaS 平台，也有 Serverless 服务，还能跑类 Docker 项目（不是直接用 Docker 跑的，是自动适配，用 Serverless 形式跑的），可以快速部署 Alist、Rsshub、Memos、Uptime Kuma、Chatgpt-next-web等程序。甚至可以用来跑 Minecraft 游戏服务器，注册即送 5 刀额度，如果绑定一个注册超过180天的 Github 账号可以永久享受每月5美元的额度。每个可用区有4H 8G 10G 资源，一共 10 GB 流量。</p><p><img src="https://img.yeqi.net/image-20250416165023528.webp"></p><blockquote><p>需要注意的是，如果您的 GitHub 账号注册时间不足 180 天，则仅能获得一次性的 5 刀额度，而非永久免费。</p></blockquote><p>注册地址：<a href="https://console.run.claw.cloud/signin?link=GRJ26KTKVUCT">https://console.run.claw.cloud/signin?link=GRJ26KTKVUCT</a></p><p>Claw Cloud Run 是一款功能强大且易于使用的在线开发平台，特别适合个人开发者、学生和技术爱好者。通过其丰富的应用商店和支持的开源项目，用户可以快速搭建各种实用工具和 AI 应用，同时享受永久免费的资源额度。无论是学习新技术、测试新想法，还是运行个人项目，Claw Cloud Run 都是一个值得尝试的选择。</p><hr><p>我就利用Claw Cloud Run部署了一个WordPress博客。</p><p>地址：<a href="https://lytahton.ap-northeast-1.clawcloudrun.com/">https://lytahton.ap-northeast-1.clawcloudrun.com/</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Claw是近年才出线的云服务商，提供的服务线路基本上与阿里云相同，但性价比更高，可以看作是阿里云还没承认的私生仔，有点类似于小米旗下的红米子品牌，换个牌子可以放下身段、法务、规则等等限制，扯远了，今天主要介绍一下如何撸刚出的免费容器，最高可用配置可达4H8G&lt;/p&gt;
+&lt;p&gt;</summary>
+      
+    
+    
+    
+    <category term="免费资源" scheme="https://yeqi.net/categories/%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90/"/>
+    
+    
+    <category term="Claw Cloud Run" scheme="https://yeqi.net/tags/Claw-Cloud-Run/"/>
+    
+  </entry>
   
   <entry>
     <title>域名续费-好贵</title>
@@ -509,31 +534,6 @@
     
     
     <category term="照片" scheme="https://yeqi.net/tags/%E7%85%A7%E7%89%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何申请成为免费的虚拟主机经销商</title>
-    <link href="https://yeqi.net/free-host-1d080add0d89/"/>
-    <id>https://yeqi.net/free-host-1d080add0d89/</id>
-    <published>2024-09-21T14:26:11.000Z</published>
-    <updated>2024-11-09T14:42:34.616Z</updated>
-    
-    <content type="html"><![CDATA[<p>分享一下我观察了好几年的免费虚拟主机哈。也不算是观察哈，只是有时候会需要简单的用一下这个免费的虚拟主机。所以感觉还不错，正好也写一篇文章记录一下这个主机，不为别的，只是为了以后自己使用的时候方便。</p><p>也顺便记录一下自己申请成为这个免费的主机经销商。当然这个是全部免费的。</p><p>要求：</p><ul><li>域名 《一定是要顶级域名，不可以使用垃圾域名。》</li><li>邮箱 《就是你自己的邮箱。》</li></ul><p>第一步：</p><p>先给自己的域名添加4个NS记录，我用的是我顶级域名的二级域名申请的哈。《freehost.yeqi.net》</p><p>附图：</p><p><img src="https://img.yeqi.net/free-host1.jpeg" alt="域名ns记录"></p><ul><li>ns1.byet.org</li><li>ns2.byet.org</li><li>ns3.byet.org</li><li>ns4.byet.org</li></ul><p>第二步：</p><p>打开免费主机经销商申请地址：<a href="https://www.myownfreehost.net/createreseller.php">https://www.myownfreehost.net/createreseller.php</a></p><p>填写你要使用的域名以及邮箱，因为第一步已经填写了4个ns记录值，</p><p>附图：</p><p><img src="https://img.yeqi.net/free-host2.jpeg" alt="注册免费虚拟主机经销商"></p><p>在 <strong>Domain name</strong> 处填写你的域名，因为我是使用的二级域名，比如：<a href="https://freehost.yeqi.net/">https://freehost.yeqi.net</a></p><p>在 <strong>Email</strong> 填写你的邮箱。</p><p>之后点击下面的《<strong>CLICK TO SIGN UP</strong>》按钮，</p><p>等待网页变成有英文字段的时候，就可以了，剩下的就是等待他们的配置了。一般是24小时以内就给配置好了。当他们配置好之后，你的邮箱就可以收到管理后台的邮件了。</p><p>附图：</p><p><img src="https://img.yeqi.net/free-host3.jpeg"></p><p>等我这边申请成功后，我在写一篇，如何使用这个免费的虚拟主机哈。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;分享一下我观察了好几年的免费虚拟主机哈。也不算是观察哈，只是有时候会需要简单的用一下这个免费的虚拟主机。所以感觉还不错，正好也写一篇文章记录一下这个主机，不为别的，只是为了以后自己使用的时候方便。&lt;/p&gt;
-&lt;p&gt;也顺便记录一下自己申请成为这个免费的主机经销商。当然这个是全部</summary>
-      
-    
-    
-    
-    <category term="免费资源" scheme="https://yeqi.net/categories/%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90/"/>
-    
-    
-    <category term="免费虚拟主机" scheme="https://yeqi.net/tags/%E5%85%8D%E8%B4%B9%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA/"/>
     
   </entry>
   
