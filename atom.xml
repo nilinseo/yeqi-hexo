@@ -6,7 +6,7 @@
   <link href="https://yeqi.net/atom.xml" rel="self"/>
   
   <link href="https://yeqi.net/"/>
-  <updated>2025-04-20T14:24:06.993Z</updated>
+  <updated>2025-04-24T14:16:59.594Z</updated>
   <id>https://yeqi.net/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我要搭建一个文档网站遇到的困难以及感悟</title>
+    <link href="https://yeqi.net/21-a3d28f4f5494/"/>
+    <id>https://yeqi.net/21-a3d28f4f5494/</id>
+    <published>2025-04-24T13:08:05.000Z</published>
+    <updated>2025-04-24T14:16:59.594Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近一直想弄一个文档网站，主要是文档网站看起来高端大气上档次，还有一个特点就是，看着正规。对正规。</p><p>还有一个就是文档网站内部的规划是属于一种树形，怎么说呢？意思就是说内部的数据框架是属于比较清晰，类似于一棵大树，有主干，有枝叶这种框架，这种框架对于目录有着清晰分配，对于各种类型的内容有着比较好的分离以及专注。换句大白话来说：这才像正版的嘛🤭。</p><p>为此我在网上专门找了一些搭建这类文档网站的开源源码。并且自己亲手测试了一下，下面我写一下这几天上手的体验哈。</p><ul><li>Vitepress</li><li>Vuepress</li><li>Docsify</li></ul><h2 id="Docsify"><a href="#Docsify" class="headerlink" title="Docsify"></a>Docsify</h2><p><img src="https://img.yeqi.net/docsify.png"></p><p><code>Docsify</code>个人感觉这个相对来说搭建起来比较简单，上手不算太难，基本上用不了多长时间就可以捣鼓出一个漂亮的文档网站，</p><p>但是这个给我的感觉就是有点过于简单，尤其是url，每个网址后面和目录中间都有个<code>#</code>,对于这个我感觉相当的别扭。</p><p>docs&#x2F;about.md         &#x3D;&gt; <a href="http://domain.com/#/about">http://domain.com/#/about</a><br>docs&#x2F;note&#x2F;README.md   &#x3D;&gt; <a href="http://domain.com/#/note/">http://domain.com/#/note/</a><br>docs&#x2F;note&#x2F;note1.md    &#x3D;&gt; <a href="http://domain.com/#/note/note1">http://domain.com/#/note/note1</a><br>docs&#x2F;note&#x2F;note2.md    &#x3D;&gt; <a href="http://domain.com/#/note/note2">http://domain.com/#/note/note2</a></p><p>官网：<a href="https://docsify.js.org/">https://docsify.js.org/</a></p><hr><h2 id="Vuepress"><a href="#Vuepress" class="headerlink" title="Vuepress"></a>Vuepress</h2><p><img src="https://img.yeqi.net/vuepress.png"></p><p><code>Vuepress</code>这个几把玩意我就没捣鼓成功过，看网上好多人用这个搭建起来的文档+博客，只能是羡慕妒忌的份儿了，我也纳闷的是我每次按照官网上的办法去搭建，就是搭建不成功，我也是醉了，每次不是这样的BUG就是那样的BUG，反正我是弄不成这个几把玩意儿。</p><p>我估计是我技术不到家，反正我是死活弄不成这个几把玩意儿。看别人用这个搭建的正规网站，只能是羡慕啦。😔</p><p>官网：<a href="https://vuepress.vuejs.org/zh/">https://vuepress.vuejs.org/zh/</a></p><hr><h2 id="Vitepress"><a href="#Vitepress" class="headerlink" title="Vitepress"></a>Vitepress</h2><p><img src="https://img.yeqi.net/vitepress.png"></p><p><code>Vitepress</code>话说这个跟上面那个Vuepress是一个孪生兄弟，这个我弄成了，现在在本地正在测试，与其说成测试，不如说正在学习怎么使用Vitepress。</p><p>这个在本地搭建的时候，上手没有<code>Docsify</code>那般简单，但是这个没有了那个<code>#</code>，这个看起来蛮舒服的。</p><p>这个也比<code>Vuepress</code>好搭建，最起码没有那么多的BUG出现，😂。</p><p>现在在本地搭建的默认主题，首页那叫一个漂亮。目录也可以分的赏心悦目，对赏心悦目，怎么看怎么舒服。😄</p><p>官网：<a href="https://vitepress.dev/zh/">https://vitepress.dev/zh/</a></p><h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>从我上手搭建的这三个开源项目，个人感觉最简单的非<code>Docsify</code>莫属，这个我个人感觉是最简单的，也是最容易上手的。</p><p>也不知道<code>Vuepress</code>是咋回事，反正我是没搭建起来，全是bug，也有可能是我技术不到家，也有可能是官网的文档说明好几年没更新了，反正我是没搭建起来，cao···</p><p>但是<code>Vitepress</code>跟着他们的帮助文档搭建，会正常的搭建起来。而且他们官网的帮助文档最近更新日期是今年的。反正现在先捣鼓<code>Vitepress</code>了。</p><p>以上三个开源项目都是支持一边编写一边热刷新，意思就是一边编写一边可以查看编写后在网页上呈现出最终的效果。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;最近一直想弄一个文档网站，主要是文档网站看起来高端大气上档次，还有一个特点就是，看着正规。对正规。&lt;/p&gt;
+&lt;p&gt;还有一个就是文档网站内部的</summary>
+      
+    
+    
+    
+    <category term="个人随笔" scheme="https://yeqi.net/categories/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/"/>
+    
+    
+    <category term="Vitepress" scheme="https://yeqi.net/tags/Vitepress/"/>
+    
+    <category term="Vuepress" scheme="https://yeqi.net/tags/Vuepress/"/>
+    
+    <category term="Docsify" scheme="https://yeqi.net/tags/Docsify/"/>
+    
+  </entry>
   
   <entry>
     <title>Claw Cloud Run 免费容器来了无需信用卡Github账号满180天，终身每月送5刀</title>
@@ -500,32 +529,6 @@
 &lt;p&gt;有时候也会在夜里想，为什么现在一点点自由的时间都没了。或许这就是中年人的无奈吧。&lt;/p&gt;
 &lt;p&gt;《PS：上有老，下有小，他们都需要我。》&lt;/p&gt;
 &lt;p&gt;既然早上的日出没办</summary>
-      
-    
-    
-    
-    <category term="随手一拍" scheme="https://yeqi.net/categories/%E9%9A%8F%E6%89%8B%E4%B8%80%E6%8B%8D/"/>
-    
-    
-    <category term="照片" scheme="https://yeqi.net/tags/%E7%85%A7%E7%89%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>老街道随手一拍的照片与无损压缩照片</title>
-    <link href="https://yeqi.net/2-376020ad0660/"/>
-    <id>https://yeqi.net/2-376020ad0660/</id>
-    <published>2024-09-23T14:15:03.000Z</published>
-    <updated>2024-10-09T13:21:10.718Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天尝试用手机拍了一张古老建筑的照片，准备放在这篇博文里，但是发现体积太大了，竟然有2.38MB!</p><p><img src="https://img.yeqi.net/2024-09-23.png"></p><p>如果直接放到博文里，那样实在是太大了，并且如果有人打开这个博文的话，就单单一个图片加载时长就让人无法忍受！</p><p>再有一个，本身咱们的这个博客是存放在GitHub的仓库里，也会有滥用的风险，所以一定要想办法给图片压缩一下。</p><p>所以我在网上找到了一种办法，当然本着能不花钱解决问题的心态，就一定不花钱。嘿嘿</p><h2 id="TinyPNG图片智能压缩"><a href="#TinyPNG图片智能压缩" class="headerlink" title="TinyPNG图片智能压缩"></a>TinyPNG图片智能压缩</h2><p>TinyPNG 在不牺牲质量的情况下将文件大小减少多达 80%，从而加快页面加载速度。这种优化对于保持用户注意力和确保愉快的用户体验至关重要。</p><p>官网：<a href="https://tinypng.com/">https://tinypng.com/</a></p><p><img src="https://img.yeqi.net/tinypng.jpeg" alt="TinyPNG"></p><p>经过我的压缩，一个2.38MB的图片竟然被压缩到了530KB，足足压缩了79%，并且还让照片不失真，这个网站简直太牛了。</p><p>而且它竟然还是免费使用的，这个就更加牛逼克拉斯了。</p><p><img src="https://img.yeqi.net/IMG_20240921_110842.jpg"></p><p>欣赏一下1971年11月建造的建筑物，毕竟现在已经不多见了。虽然它看起来破破烂烂的，但是毕竟是有年代感了。</p><p>当然照片也是经过手机调色的，我个人认为这样的色调更有年代感。</p><hr><p>PS：当然网上还有很多压缩图片的方法，但是我还是觉得这个TinyPNG使用起来，适合我这种小白。</p><p>😄</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;今天尝试用手机拍了一张古老建筑的照片，准备放在这篇博文里，但是发现体积太大了，竟然有2.38MB!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://img.yeqi.net/2024-09-23.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;如果直接放到博文里，那样实在是太大了，并且如果有人</summary>
       
     
     

@@ -13,7 +13,7 @@
 
 
 
-<title>Claw Cloud Run 免费容器来了无需信用卡Github账号满180天，终身每月送5刀 | 夜七笔记</title>
+<title>我要搭建一个文档网站遇到的困难以及感悟 | 夜七笔记</title>
 
 
 
@@ -140,11 +140,76 @@
                 <div class="container">
     
     
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
 
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">Claw Cloud Run 免费容器来了无需信用卡Github账号满180天，终身每月送5刀</h1>
+            <h1 class="post-title">我要搭建一个文档网站遇到的困难以及感悟</h1>
             
                 <div class="post-meta">
                     
@@ -153,14 +218,14 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">四月 20, 2025&nbsp;&nbsp;22:10:56</a>
+                        Date: <a href="#">四月 24, 2025&nbsp;&nbsp;21:08:05</a>
                         </span>
                     
                     
                         <span class="post-category">
                     Category:
                             
-                                <a href="/categories/%E5%85%8D%E8%B4%B9%E8%B5%84%E6%BA%90/">免费资源</a>
+                                <a href="/categories/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/">个人随笔</a>
                             
                         </span>
                     
@@ -169,17 +234,35 @@
         </header>
 
         <div class="post-content">
-            <p>Claw是近年才出线的云服务商，提供的服务线路基本上与阿里云相同，但性价比更高，可以看作是阿里云还没承认的私生仔，有点类似于小米旗下的红米子品牌，换个牌子可以放下身段、法务、规则等等限制，扯远了，今天主要介绍一下如何撸刚出的免费容器，最高可用配置可达4H8G</p>
-<p>Claw Cloud Run是 Claw Cloud 旗下的轻应用平台，你可以理解成 <code>Vercel、Netlify</code> 之类的东西，既是 PaaS 平台，也有 Serverless 服务，还能跑类 Docker 项目（不是直接用 Docker 跑的，是自动适配，用 Serverless 形式跑的），可以快速部署 Alist、Rsshub、Memos、Uptime Kuma、Chatgpt-next-web等程序。甚至可以用来跑 Minecraft 游戏服务器，注册即送 5 刀额度，如果绑定一个注册超过180天的 Github 账号可以永久享受每月5美元的额度。每个可用区有4H 8G 10G 资源，一共 10 GB 流量。</p>
-<p><img src="https://img.yeqi.net/image-20250416165023528.webp"></p>
-<blockquote>
-<p>需要注意的是，如果您的 GitHub 账号注册时间不足 180 天，则仅能获得一次性的 5 刀额度，而非永久免费。</p>
-</blockquote>
-<p>注册地址：<a target="_blank" rel="noopener" href="https://console.run.claw.cloud/signin?link=GRJ26KTKVUCT">https://console.run.claw.cloud/signin?link=GRJ26KTKVUCT</a></p>
-<p>Claw Cloud Run 是一款功能强大且易于使用的在线开发平台，特别适合个人开发者、学生和技术爱好者。通过其丰富的应用商店和支持的开源项目，用户可以快速搭建各种实用工具和 AI 应用，同时享受永久免费的资源额度。无论是学习新技术、测试新想法，还是运行个人项目，Claw Cloud Run 都是一个值得尝试的选择。</p>
+            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近一直想弄一个文档网站，主要是文档网站看起来高端大气上档次，还有一个特点就是，看着正规。对正规。</p>
+<p>还有一个就是文档网站内部的规划是属于一种树形，怎么说呢？意思就是说内部的数据框架是属于比较清晰，类似于一棵大树，有主干，有枝叶这种框架，这种框架对于目录有着清晰分配，对于各种类型的内容有着比较好的分离以及专注。换句大白话来说：这才像正版的嘛🤭。</p>
+<p>为此我在网上专门找了一些搭建这类文档网站的开源源码。并且自己亲手测试了一下，下面我写一下这几天上手的体验哈。</p>
+<ul>
+<li>Vitepress</li>
+<li>Vuepress</li>
+<li>Docsify</li>
+</ul>
+<h2 id="Docsify"><a href="#Docsify" class="headerlink" title="Docsify"></a>Docsify</h2><p><img src="https://img.yeqi.net/docsify.png"></p>
+<p><code>Docsify</code>个人感觉这个相对来说搭建起来比较简单，上手不算太难，基本上用不了多长时间就可以捣鼓出一个漂亮的文档网站，</p>
+<p>但是这个给我的感觉就是有点过于简单，尤其是url，每个网址后面和目录中间都有个<code>#</code>,对于这个我感觉相当的别扭。</p>
+<p>docs&#x2F;about.md         &#x3D;&gt; <a target="_blank" rel="noopener" href="http://domain.com/#/about">http://domain.com/#/about</a><br>docs&#x2F;note&#x2F;README.md   &#x3D;&gt; <a target="_blank" rel="noopener" href="http://domain.com/#/note/">http://domain.com/#/note/</a><br>docs&#x2F;note&#x2F;note1.md    &#x3D;&gt; <a target="_blank" rel="noopener" href="http://domain.com/#/note/note1">http://domain.com/#/note/note1</a><br>docs&#x2F;note&#x2F;note2.md    &#x3D;&gt; <a target="_blank" rel="noopener" href="http://domain.com/#/note/note2">http://domain.com/#/note/note2</a></p>
+<p>官网：<a target="_blank" rel="noopener" href="https://docsify.js.org/">https://docsify.js.org/</a></p>
 <hr>
-<p>我就利用Claw Cloud Run部署了一个WordPress博客。</p>
-<p>地址：<a target="_blank" rel="noopener" href="https://lytahton.ap-northeast-1.clawcloudrun.com/">https://lytahton.ap-northeast-1.clawcloudrun.com/</a></p>
+<h2 id="Vuepress"><a href="#Vuepress" class="headerlink" title="Vuepress"></a>Vuepress</h2><p><img src="https://img.yeqi.net/vuepress.png"></p>
+<p><code>Vuepress</code>这个几把玩意我就没捣鼓成功过，看网上好多人用这个搭建起来的文档+博客，只能是羡慕妒忌的份儿了，我也纳闷的是我每次按照官网上的办法去搭建，就是搭建不成功，我也是醉了，每次不是这样的BUG就是那样的BUG，反正我是弄不成这个几把玩意儿。</p>
+<p>我估计是我技术不到家，反正我是死活弄不成这个几把玩意儿。看别人用这个搭建的正规网站，只能是羡慕啦。😔</p>
+<p>官网：<a target="_blank" rel="noopener" href="https://vuepress.vuejs.org/zh/">https://vuepress.vuejs.org/zh/</a></p>
+<hr>
+<h2 id="Vitepress"><a href="#Vitepress" class="headerlink" title="Vitepress"></a>Vitepress</h2><p><img src="https://img.yeqi.net/vitepress.png"></p>
+<p><code>Vitepress</code>话说这个跟上面那个Vuepress是一个孪生兄弟，这个我弄成了，现在在本地正在测试，与其说成测试，不如说正在学习怎么使用Vitepress。</p>
+<p>这个在本地搭建的时候，上手没有<code>Docsify</code>那般简单，但是这个没有了那个<code>#</code>，这个看起来蛮舒服的。</p>
+<p>这个也比<code>Vuepress</code>好搭建，最起码没有那么多的BUG出现，😂。</p>
+<p>现在在本地搭建的默认主题，首页那叫一个漂亮。目录也可以分的赏心悦目，对赏心悦目，怎么看怎么舒服。😄</p>
+<p>官网：<a target="_blank" rel="noopener" href="https://vitepress.dev/zh/">https://vitepress.dev/zh/</a></p>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>从我上手搭建的这三个开源项目，个人感觉最简单的非<code>Docsify</code>莫属，这个我个人感觉是最简单的，也是最容易上手的。</p>
+<p>也不知道<code>Vuepress</code>是咋回事，反正我是没搭建起来，全是bug，也有可能是我技术不到家，也有可能是官网的文档说明好几年没更新了，反正我是没搭建起来，cao···</p>
+<p>但是<code>Vitepress</code>跟着他们的帮助文档搭建，会正常的搭建起来。而且他们官网的帮助文档最近更新日期是今年的。反正现在先捣鼓<code>Vitepress</code>了。</p>
+<p>以上三个开源项目都是支持一边编写一边热刷新，意思就是一边编写一边可以查看编写后在网页上呈现出最终的效果。</p>
 
         </div>
 
@@ -194,7 +277,7 @@
                 
                     <p class="copyright-item">
                         <span>Permalink:</span>
-                        <span><a href="https://yeqi.net/20-278bcdd690e5/">https://yeqi.net/20-278bcdd690e5/</a></span>
+                        <span><a href="https://yeqi.net/21-a3d28f4f5494/">https://yeqi.net/21-a3d28f4f5494/</a></span>
                     </p>
                 
                 
@@ -218,7 +301,11 @@
                 <span class="tag">
                     
                     
-                        <a href="/tags/Claw-Cloud-Run/"># Claw Cloud Run</a>
+                        <a href="/tags/Vitepress/"># Vitepress</a>
+                    
+                        <a href="/tags/Vuepress/"># Vuepress</a>
+                    
+                        <a href="/tags/Docsify/"># Docsify</a>
                     
                         
                 </span>
@@ -231,10 +318,8 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/21-a3d28f4f5494/">我要搭建一个文档网站遇到的困难以及感悟</a>
             
-            
-            <a class="next" rel="next" href="/19-533d857b98d5/">域名续费-好贵</a>
+            <a class="next" rel="next" href="/20-278bcdd690e5/">Claw Cloud Run 免费容器来了无需信用卡Github账号满180天，终身每月送5刀</a>
             
         </section>
         <script src="https://giscus.app/client.js"
