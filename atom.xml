@@ -6,7 +6,7 @@
   <link href="https://yeqi.net/atom.xml" rel="self"/>
   
   <link href="https://yeqi.net/"/>
-  <updated>2025-04-30T12:10:00.524Z</updated>
+  <updated>2025-08-04T15:24:50.352Z</updated>
   <id>https://yeqi.net/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>除草随笔之--罗里吧嗦一堆没用的</title>
+    <link href="https://yeqi.net/24-33e19b21915d/"/>
+    <id>https://yeqi.net/24-33e19b21915d/</id>
+    <published>2025-08-04T15:09:15.000Z</published>
+    <updated>2025-08-04T15:24:50.352Z</updated>
+    
+    <content type="html"><![CDATA[<p>趁着这回有时间来更新一下我的小笔记。</p><p>前段时间一直在瞎忙着，除了上班就是上班，基本上不怎么分时间哪种班，毕竟一个中年的牛马，只能是能多挣点钱，就多挣点钱。现在也是家里的顶梁柱了，有很多时候是不能在随着自己的性子了。</p><p>刚刚看了一下，我这个小小的笔记博客，竟然也一年多了，如果是一个经常更新的博友，估计会写上一篇：一周年纪念啥的，我是个大老粗，就算了吧，咱肚子里也没那个墨水。</p><p>将就着看吧，当然前提是有朋友会看到，哈。</p><p>罗里吧嗦了一堆没用的话，就不删除了。毕竟还是以除草为目地嘛。也是有好几个月没开电脑了，主要还是没时间，顺便也在试试自己这好几个月没开的电脑，是不是还能够正常的写咱这个小笔记哈。</p><p>来个图片测试一下图床还能不能用。</p><p><img src="https://img.yeqi.net/chucao.webp"></p><p>看来还不错，所有的功能还是跟几个月前一样的好用哈。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;趁着这回有时间来更新一下我的小笔记。&lt;/p&gt;
+&lt;p&gt;前段时间一直在瞎忙着，除了上班就是上班，基本上不怎么分时间哪种班，毕竟一个中年的牛马，只能是能多挣点钱，就多挣点钱。现在也是家里的顶梁柱了，有很多时候是不能在随着自己的性子了。&lt;/p&gt;
+&lt;p&gt;刚刚看了一下，我这个小小的笔记</summary>
+      
+    
+    
+    
+    <category term="个人随笔" scheme="https://yeqi.net/categories/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/"/>
+    
+    
+    <category term="除草随笔" scheme="https://yeqi.net/tags/%E9%99%A4%E8%8D%89%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
   
   <entry>
     <title>拍天空照片一张</title>
@@ -511,31 +537,6 @@
     
     
     <category term="博客" scheme="https://yeqi.net/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>我自己使用的Chic主题优化存稿</title>
-    <link href="https://yeqi.net/5-a497303d0397/"/>
-    <id>https://yeqi.net/5-a497303d0397/</id>
-    <published>2024-10-12T04:54:47.000Z</published>
-    <updated>2024-11-05T12:43:08.741Z</updated>
-    
-    <content type="html"><![CDATA[<p>这段时间把自己使用的Chic主题更改了一些，顺便记录一下，免得以后忘记自己都更改了哪里。</p><h2 id="增加了footer-ejs文件的两串代码"><a href="#增加了footer-ejs文件的两串代码" class="headerlink" title="增加了footer.ejs文件的两串代码"></a>增加了footer.ejs文件的两串代码</h2><h3 id="本站已运行时间代码"><a href="#本站已运行时间代码" class="headerlink" title="本站已运行时间代码"></a>本站已运行时间代码</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;span&gt;本站已运行 &lt;span id=&quot;days&quot; style=&quot;font-weight:800; color:#ED712E;&quot;&gt; &lt;/span&gt; 天&lt;/span&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line"> let s1 = &#x27;2024-7-14&#x27;;  //设置为你的建站时间</span><br><span class="line">s1 = new Date(s1.replace(/-/g, &quot;/&quot;));</span><br><span class="line">s2 = new Date();</span><br><span class="line">let days = s2.getTime() - s1.getTime();</span><br><span class="line">let number_of_days = parseInt(days / (1000 * 60 * 60 * 24));</span><br><span class="line">document.getElementById(&#x27;days&#x27;).innerHTML = number_of_days;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><h3 id="增加博客年份"><a href="#增加博客年份" class="headerlink" title="增加博客年份"></a>增加博客年份</h3><p>footer.ejs文件中的<span></span>标签内添加配置：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%if (theme.since_year &amp;&amp; theme.since_year &lt; date(new Date(), &quot;YYYY&quot;)) &#123;%&gt;&lt;%- theme.since_year %&gt; - &lt;%&#125;%&gt;&lt;%- date(new Date(), &quot;YYYY&quot;) %&gt;</span><br></pre></td></tr></table></figure><p>在主题的_config.yml中引入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 版权起始年份</span><br><span class="line">since_year: 2024</span><br></pre></td></tr></table></figure><h2 id="增加了一个评论功能"><a href="#增加了一个评论功能" class="headerlink" title="增加了一个评论功能"></a>增加了一个评论功能</h2><p>本来是想着使用现成的Gitalk评论功能的，但是自己死活不会弄，也弄不成，干脆放弃了。最后使用的Cusdis评论功能。</p><h3 id="Cusdis评论"><a href="#Cusdis评论" class="headerlink" title="Cusdis评论"></a>Cusdis评论</h3><p>2024年10月31日替换成为<code>giscus评论系统</code>了，并且搭建教程在《<a href="https://yeqi.net/8-d9fa1c7a51fd/">在Chic主题中使用giscus评论</a>。》</p><p>2024年10月31日替换成为<code>giscus评论系统</code>了，并且搭建教程在《<a href="https://yeqi.net/8-d9fa1c7a51fd/">在Chic主题中使用giscus评论</a>。》</p><p>2024年10月31日替换成为<code>giscus评论系统</code>了，并且搭建教程在《<a href="https://yeqi.net/8-d9fa1c7a51fd/">在Chic主题中使用giscus评论</a>。》</p><p><del>Cusdis 是一个注重数据隐私的开源的评论系统，十分轻量，经过 gzipped 后大约只有 5kb，</del></p><p><del>这个是自己创建的一个目录页面：message目录的index.md里加入了Cusdis官方的代码。</del></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;cusdis_thread&quot;</span><br><span class="line">  data-host=&quot;https://cusdis.com&quot;</span><br><span class="line">  data-app-id=&quot;这里是你自己的id，会自动生成的，我把我的还是隐藏吧&quot;</span><br><span class="line">  data-page-id=&quot;&#123;&#123; PAGE_ID &#125;&#125;&quot;</span><br><span class="line">  data-page-url=&quot;&#123;&#123; PAGE_URL &#125;&#125;&quot;</span><br><span class="line">  data-page-title=&quot;&#123;&#123; PAGE_TITLE &#125;&#125;&quot;</span><br><span class="line">&gt;&lt;/div&gt;</span><br><span class="line">&lt;script async defer src=&quot;https://cusdis.com/js/cusdis.es.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure><p>因为我不会自己部署Cusdis，还是直接使用他们官方的算了，本身咱就是一个小博客。毕竟也没啥人能关注到这么一个小博客哈。</p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>目前就是只是增加了这些，往后在增加了，就在写。</p><p>现在必须得记录，不然时间一长就完全记不住了。正所谓记录记录，不记咋能有目录。😄</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;这段时间把自己使用的Chic主题更改了一些，顺便记录一下，免得以后忘记自己都更改了哪里。&lt;/p&gt;
-&lt;h2 id=&quot;增加了footer-ejs文件的两串代码&quot;&gt;&lt;a href=&quot;#增加了footer-ejs文件的两串代码&quot; class=&quot;headerlink&quot; title=&quot;</summary>
-      
-    
-    
-    
-    <category term="hexo优化" scheme="https://yeqi.net/categories/hexo%E4%BC%98%E5%8C%96/"/>
-    
-    
-    <category term="Chic" scheme="https://yeqi.net/tags/Chic/"/>
     
   </entry>
   
