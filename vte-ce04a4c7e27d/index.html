@@ -13,7 +13,7 @@
 
 
 
-<title>除草随笔之--罗里吧嗦一堆没用的 | 夜七笔记</title>
+<title>脑子一抽我购买一口价域名的那些骚操作 | 夜七笔记</title>
 
 
 
@@ -144,11 +144,76 @@
                 <div class="container">
     
     
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
 
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">除草随笔之--罗里吧嗦一堆没用的</h1>
+            <h1 class="post-title">脑子一抽我购买一口价域名的那些骚操作</h1>
             
                 <div class="post-meta">
                     
@@ -157,7 +222,7 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">八月 4, 2025&nbsp;&nbsp;23:09:15</a>
+                        Date: <a href="#">九月 1, 2025&nbsp;&nbsp;20:39:17</a>
                         </span>
                     
                     
@@ -173,14 +238,19 @@
         </header>
 
         <div class="post-content">
-            <p>趁着这回有时间来更新一下我的小笔记。</p>
-<p>前段时间一直在瞎忙着，除了上班就是上班，基本上不怎么分时间哪种班，毕竟一个中年的牛马，只能是能多挣点钱，就多挣点钱。现在也是家里的顶梁柱了，有很多时候是不能在随着自己的性子了。</p>
-<p>刚刚看了一下，我这个小小的笔记博客，竟然也一年多了，如果是一个经常更新的博友，估计会写上一篇：一周年纪念啥的，我是个大老粗，就算了吧，咱肚子里也没那个墨水。</p>
-<p>将就着看吧，当然前提是有朋友会看到，哈。</p>
-<p>罗里吧嗦了一堆没用的话，就不删除了。毕竟还是以除草为目地嘛。也是有好几个月没开电脑了，主要还是没时间，顺便也在试试自己这好几个月没开的电脑，是不是还能够正常的写咱这个小笔记哈。</p>
-<p>来个图片测试一下图床还能不能用。</p>
-<p><img src="https://img.yeqi.net/chucao.webp"></p>
-<p>看来还不错，所有的功能还是跟几个月前一样的好用哈。</p>
+            <p>说说我前几天购买域名遇到的狗血事，文笔不好，如果您看到了，就当一乐呵就行。</p>
+<h2 id="购买域名"><a href="#购买域名" class="headerlink" title="购买域名"></a>购买域名</h2><p>也不知道前几天脑子抽风了还是咋了，突然想看看网上的一口价域名，那会想着是万一有自己相中的呢，尤其是那种很简短并且好记的那种。怀着这种猎奇的心理，就在网上查呀看呀，还不错，看中了一个，价格当时看着还不贵。220+的价格，本来想着直接拿下的，就随手查看了一下这个域名的<code>Whois</code>信息，但是越看越感觉不对。</p>
+<p>这个域名的<code>Whois</code>注册商并不是这个出一口价的平台，当时我以为看错了，揉揉眼仔细一看确实不对，并且<code>DNS服务器</code>地址也不是这个出一口价平台的<code>DNS服务器</code>地址，当时也是抱着看看的心态去查了一下这个域名<code>DNS服务器</code>所在地，那个也是一个域名一口价交易的平台，随后在那个平台查看了一下刚刚看中的域名，不查不知道，一查吓一跳！他奶奶地在这这个平台，这个域名一口价才30+！果断在第二个平台上一气呵成的注册账号并购买咱相中的域名。</p>
+<p>其实后来想想，他奶奶滴原来不是域名贵，是平台中间的抽成贵！</p>
+<p>也幸亏多查了一下这个域名的<code>Whois</code>信息，这番操作怒省190RMB。</p>
+<h2 id="转出域名"><a href="#转出域名" class="headerlink" title="转出域名"></a>转出域名</h2><p>域名已经购买成功了，但是我个人还是不习惯在多个平台管理域名，想着把域名转到自己常用的域名注册商这里，但是咱又没用操作过转出域名这个操作，想着现在网上看看别人是怎么转出域名的，当然以我这个知识水平看的也是头昏脑胀，闹不清楚具体的操作流程，但是也是看了一个大概的操作流程。</p>
+<p>其中有一条好像说什么60天锁定啥的，反正咱也闹不清楚，不如直接给这个域名续费一年，这样这个域名就又有了一年多的时间线了。不用在刻意的在乎这个所谓的60天锁定期了。</p>
+<p>心理有了这个保证之后想着不如试试，万一弄成了呢。随后就是在这个陌生的平台上尝试转出域名，基本上没几步的操作，也是相对来说还比较简单，唯独到了最后的一步，在自己常用的域名注册商这里填写这个域名和转移密码，我就有点犹豫了。想着万一自己的操作的不对，把域名给弄没了就完蛋了！到时候自己常用的域名注册商没接到这个域名，而一口价的那个平台人家已经按照咱自己的操作已经转出去了，这个域名到时候万一成了三不管地带。到时候从哪找这个域名啊!</p>
+<p>后来索性心一横，直接干中学吧。先尝试一下。如果最后实在是没弄成，就当没买过。</p>
+<p>最后等待7天左右的时间，还真的成功了。哈哈</p>
+<h2 id="浅谈一下我购买域名和转出与转入域名的心理"><a href="#浅谈一下我购买域名和转出与转入域名的心理" class="headerlink" title="浅谈一下我购买域名和转出与转入域名的心理"></a>浅谈一下我购买域名和转出与转入域名的心理</h2><p>对于我这个新手期来说，购买一口价域名并且转出域名的这个操作，着实感觉心理有点不踏实。虽然最后是弄成了，因为是第一次这样操作，感觉自己还是有点冒失了。</p>
+<p>虽然这个域名没多少钱，但是这波操作绝对要比这个域名本身有价值。</p>
+<p>最后如果以上的操作没弄成，这篇文章我估计就不会出现在我这个小破站喽。😄</p>
 
         </div>
 
@@ -195,7 +265,7 @@
                 
                     <p class="copyright-item">
                         <span>Permalink:</span>
-                        <span><a href="https://yeqi.net/24-33e19b21915d/">https://yeqi.net/24-33e19b21915d/</a></span>
+                        <span><a href="https://yeqi.net/vte-ce04a4c7e27d/">https://yeqi.net/vte-ce04a4c7e27d/</a></span>
                     </p>
                 
                 
@@ -219,7 +289,7 @@
                 <span class="tag">
                     
                     
-                        <a href="/tags/%E9%99%A4%E8%8D%89%E9%9A%8F%E7%AC%94/"># 除草随笔</a>
+                        <a href="/tags/%E5%9F%9F%E5%90%8D/"># 域名</a>
                     
                         
                 </span>
@@ -232,10 +302,8 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/vte-ce04a4c7e27d/">脑子一抽我购买一口价域名的那些骚操作</a>
             
-            
-            <a class="next" rel="next" href="/23-23389ed75ef1/">拍天空照片一张</a>
+            <a class="next" rel="next" href="/24-33e19b21915d/">除草随笔之--罗里吧嗦一堆没用的</a>
             
         </section>
         <script src="https://giscus.app/client.js"

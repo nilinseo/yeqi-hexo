@@ -6,7 +6,7 @@
   <link href="https://yeqi.net/atom.xml" rel="self"/>
   
   <link href="https://yeqi.net/"/>
-  <updated>2025-08-04T15:24:50.352Z</updated>
+  <updated>2025-09-01T13:42:51.746Z</updated>
   <id>https://yeqi.net/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>脑子一抽我购买一口价域名的那些骚操作</title>
+    <link href="https://yeqi.net/vte-ce04a4c7e27d/"/>
+    <id>https://yeqi.net/vte-ce04a4c7e27d/</id>
+    <published>2025-09-01T12:39:17.000Z</published>
+    <updated>2025-09-01T13:42:51.746Z</updated>
+    
+    <content type="html"><![CDATA[<p>说说我前几天购买域名遇到的狗血事，文笔不好，如果您看到了，就当一乐呵就行。</p><h2 id="购买域名"><a href="#购买域名" class="headerlink" title="购买域名"></a>购买域名</h2><p>也不知道前几天脑子抽风了还是咋了，突然想看看网上的一口价域名，那会想着是万一有自己相中的呢，尤其是那种很简短并且好记的那种。怀着这种猎奇的心理，就在网上查呀看呀，还不错，看中了一个，价格当时看着还不贵。220+的价格，本来想着直接拿下的，就随手查看了一下这个域名的<code>Whois</code>信息，但是越看越感觉不对。</p><p>这个域名的<code>Whois</code>注册商并不是这个出一口价的平台，当时我以为看错了，揉揉眼仔细一看确实不对，并且<code>DNS服务器</code>地址也不是这个出一口价平台的<code>DNS服务器</code>地址，当时也是抱着看看的心态去查了一下这个域名<code>DNS服务器</code>所在地，那个也是一个域名一口价交易的平台，随后在那个平台查看了一下刚刚看中的域名，不查不知道，一查吓一跳！他奶奶地在这这个平台，这个域名一口价才30+！果断在第二个平台上一气呵成的注册账号并购买咱相中的域名。</p><p>其实后来想想，他奶奶滴原来不是域名贵，是平台中间的抽成贵！</p><p>也幸亏多查了一下这个域名的<code>Whois</code>信息，这番操作怒省190RMB。</p><h2 id="转出域名"><a href="#转出域名" class="headerlink" title="转出域名"></a>转出域名</h2><p>域名已经购买成功了，但是我个人还是不习惯在多个平台管理域名，想着把域名转到自己常用的域名注册商这里，但是咱又没用操作过转出域名这个操作，想着现在网上看看别人是怎么转出域名的，当然以我这个知识水平看的也是头昏脑胀，闹不清楚具体的操作流程，但是也是看了一个大概的操作流程。</p><p>其中有一条好像说什么60天锁定啥的，反正咱也闹不清楚，不如直接给这个域名续费一年，这样这个域名就又有了一年多的时间线了。不用在刻意的在乎这个所谓的60天锁定期了。</p><p>心理有了这个保证之后想着不如试试，万一弄成了呢。随后就是在这个陌生的平台上尝试转出域名，基本上没几步的操作，也是相对来说还比较简单，唯独到了最后的一步，在自己常用的域名注册商这里填写这个域名和转移密码，我就有点犹豫了。想着万一自己的操作的不对，把域名给弄没了就完蛋了！到时候自己常用的域名注册商没接到这个域名，而一口价的那个平台人家已经按照咱自己的操作已经转出去了，这个域名到时候万一成了三不管地带。到时候从哪找这个域名啊!</p><p>后来索性心一横，直接干中学吧。先尝试一下。如果最后实在是没弄成，就当没买过。</p><p>最后等待7天左右的时间，还真的成功了。哈哈</p><h2 id="浅谈一下我购买域名和转出与转入域名的心理"><a href="#浅谈一下我购买域名和转出与转入域名的心理" class="headerlink" title="浅谈一下我购买域名和转出与转入域名的心理"></a>浅谈一下我购买域名和转出与转入域名的心理</h2><p>对于我这个新手期来说，购买一口价域名并且转出域名的这个操作，着实感觉心理有点不踏实。虽然最后是弄成了，因为是第一次这样操作，感觉自己还是有点冒失了。</p><p>虽然这个域名没多少钱，但是这波操作绝对要比这个域名本身有价值。</p><p>最后如果以上的操作没弄成，这篇文章我估计就不会出现在我这个小破站喽。😄</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;说说我前几天购买域名遇到的狗血事，文笔不好，如果您看到了，就当一乐呵就行。&lt;/p&gt;
+&lt;h2 id=&quot;购买域名&quot;&gt;&lt;a href=&quot;#购买域名&quot; class=&quot;headerlink&quot; title=&quot;购买域名&quot;&gt;&lt;/a&gt;购买域名&lt;/h2&gt;&lt;p&gt;也不知道前几天脑子抽风了还是咋了，</summary>
+      
+    
+    
+    
+    <category term="个人随笔" scheme="https://yeqi.net/categories/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/"/>
+    
+    
+    <category term="域名" scheme="https://yeqi.net/tags/%E5%9F%9F%E5%90%8D/"/>
+    
+  </entry>
   
   <entry>
     <title>除草随笔之--罗里吧嗦一堆没用的</title>
@@ -511,32 +536,6 @@
     
     <category term="个人随笔" scheme="https://yeqi.net/categories/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>你会在网络里写出自身经历的真实事件吗？</title>
-    <link href="https://yeqi.net/6-bb043df7f5cf/"/>
-    <id>https://yeqi.net/6-bb043df7f5cf/</id>
-    <published>2024-10-20T11:33:40.000Z</published>
-    <updated>2024-11-05T12:43:44.702Z</updated>
-    
-    <content type="html"><![CDATA[<p>我心里一直有一个疑问！真的会有人在网络里写出发生在自身的真实事件，以及自身内心真实的想法吗？</p><p>我想大概率是不会，哪怕这个人牙齿咬碎了，都不会在网络上暴露自己身边真实的事件，以及自己真实的想法。咱们国人其实骨子里是非常含蓄的，当然也有一些是喜欢曝光的。</p><p>还有一种可能，那就是除非有第三方将事件传到网络里，并且实时的更新整个事件的发展态势，因为这个网络是一个传递信息异常快速的载体，基本上越狗血，传播速度越快。</p><p>有时候八卦的猎奇心理会办砸很多本该大事化小，小事化了的事件，偏偏因为这个八卦猎奇心理让整体的事件偏离的真实事件的本身发展。</p><p>在网络上每个人都带有一层“面具”，而我们人性的传统就是喜欢聊八卦，以及深挖八卦里的内容，当然深挖的时候，内容越狗血，大家越来劲。</p><p>所以现在出来了一个名词：<strong>吃瓜</strong></p><hr><p>有时候我自己也有想把发生在自身的一些狗血写出来的想法，但是自从看过《邪步压正》的一个片段之后，瞬间就没那个想写的激情了。</p><p><span style="display:block;text-align:center;color:orangered;">《邪不压正》</span></p><ul><li><input disabled="" type="checkbox"> 谁能把心里话写日记里？</li><li><input disabled="" type="checkbox"> 写出来的那能叫心里话？</li><li><input disabled="" type="checkbox"> 下贱</li></ul><p><img src="https://img.yeqi.net/laogeng.jpeg"><br><img src="https://img.yeqi.net/laogeng1.jpeg"><br><img src="https://img.yeqi.net/laogeng2.jpeg"></p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>还是老老实实的写一些笔记算了，免得事情没办成，还惹得一身骚。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;我心里一直有一个疑问！真的会有人在网络里写出发生在自身的真实事件，以及自身内心真实的想法吗？&lt;/p&gt;
-&lt;p&gt;我想大概率是不会，哪怕这个人牙齿咬碎了，都不会在网络上暴露自己身边真实的事件，以及自己真实的想法。咱们国人其实骨子里是非常含蓄的，当然也有一些是喜欢曝光的。&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    <category term="个人随笔" scheme="https://yeqi.net/categories/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/"/>
-    
-    
-    <category term="博客" scheme="https://yeqi.net/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
